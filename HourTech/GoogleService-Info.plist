@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>548276053210-rhclekmsrbr1nqr3dcqae0baaniuhq4b.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.548276053210-rhclekmsrbr1nqr3dcqae0baaniuhq4b</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC2VVrounYdQeVM3KCTuZjSJ_0HGW9dQHI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>548276053210</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.noppawith.HourTech</string>
+	<key>PROJECT_ID</key>
+	<string>hourtech-5a21c</string>
+	<key>STORAGE_BUCKET</key>
+	<string>hourtech-5a21c.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:548276053210:ios:4a94d4617208c05d</string>
+	<key>DATABASE_URL</key>
+	<string>https://hourtech-5a21c.firebaseio.com</string>
+</dict>
+</plist>

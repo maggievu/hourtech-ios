@@ -12,9 +12,17 @@
 		7AA677D022250BDB00F6B596 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AA677CE22250BDB00F6B596 /* Main.storyboard */; };
 		7AA677D222250BDC00F6B596 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AA677D122250BDC00F6B596 /* Assets.xcassets */; };
 		7AA677D522250BDC00F6B596 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AA677D322250BDC00F6B596 /* LaunchScreen.storyboard */; };
+		90211C762226FBAB007423F0 /* Keyword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90211C752226FBAB007423F0 /* Keyword.swift */; };
+		90AE6EA3222690F50022A0A2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90AE6EA2222690F50022A0A2 /* GoogleService-Info.plist */; };
+		90AE6EA52226C2A50022A0A2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AE6EA42226C2A50022A0A2 /* LoginViewController.swift */; };
+		90AE6EA72226C3390022A0A2 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AE6EA62226C3390022A0A2 /* RegisterViewController.swift */; };
+		90AE6EA92226C3540022A0A2 /* SeachOutputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90AE6EA82226C3540022A0A2 /* SeachOutputViewController.swift */; };
+		AEED00FD9271378ECAFC5EBB /* Pods_HourTech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8823E03FADC06A61BDCB7E23 /* Pods_HourTech.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21C4EC4B455B958C10713954 /* Pods-HourTech.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HourTech.debug.xcconfig"; path = "Target Support Files/Pods-HourTech/Pods-HourTech.debug.xcconfig"; sourceTree = "<group>"; };
+		30A5A7E04420897ECA987B65 /* Pods-HourTech.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HourTech.release.xcconfig"; path = "Target Support Files/Pods-HourTech/Pods-HourTech.release.xcconfig"; sourceTree = "<group>"; };
 		7AA677C722250BDB00F6B596 /* HourTech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HourTech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AA677CA22250BDB00F6B596 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AA677CC22250BDB00F6B596 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +30,12 @@
 		7AA677D122250BDC00F6B596 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AA677D422250BDC00F6B596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7AA677D622250BDC00F6B596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8823E03FADC06A61BDCB7E23 /* Pods_HourTech.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HourTech.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90211C752226FBAB007423F0 /* Keyword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyword.swift; sourceTree = "<group>"; };
+		90AE6EA2222690F50022A0A2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		90AE6EA42226C2A50022A0A2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		90AE6EA62226C3390022A0A2 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		90AE6EA82226C3540022A0A2 /* SeachOutputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeachOutputViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEED00FD9271378ECAFC5EBB /* Pods_HourTech.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +55,8 @@
 			children = (
 				7AA677C922250BDB00F6B596 /* HourTech */,
 				7AA677C822250BDB00F6B596 /* Products */,
+				EBA5C6BDDB19E7ED1FC2FAF0 /* Pods */,
+				CFD0591564CD74F0C68E8BAD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +71,60 @@
 		7AA677C922250BDB00F6B596 /* HourTech */ = {
 			isa = PBXGroup;
 			children = (
-				7AA677CA22250BDB00F6B596 /* AppDelegate.swift */,
-				7AA677CC22250BDB00F6B596 /* ViewController.swift */,
-				7AA677CE22250BDB00F6B596 /* Main.storyboard */,
+				90AE6EAC2226C3B90022A0A2 /* Model */,
+				90AE6EAB2226C3A50022A0A2 /* View */,
+				90AE6EAA2226C38B0022A0A2 /* Controller */,
 				7AA677D122250BDC00F6B596 /* Assets.xcassets */,
 				7AA677D322250BDC00F6B596 /* LaunchScreen.storyboard */,
 				7AA677D622250BDC00F6B596 /* Info.plist */,
+				90AE6EA2222690F50022A0A2 /* GoogleService-Info.plist */,
 			);
 			path = HourTech;
+			sourceTree = "<group>";
+		};
+		90AE6EAA2226C38B0022A0A2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7AA677CA22250BDB00F6B596 /* AppDelegate.swift */,
+				7AA677CC22250BDB00F6B596 /* ViewController.swift */,
+				90AE6EA42226C2A50022A0A2 /* LoginViewController.swift */,
+				90AE6EA62226C3390022A0A2 /* RegisterViewController.swift */,
+				90AE6EA82226C3540022A0A2 /* SeachOutputViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		90AE6EAB2226C3A50022A0A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7AA677CE22250BDB00F6B596 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		90AE6EAC2226C3B90022A0A2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				90211C752226FBAB007423F0 /* Keyword.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CFD0591564CD74F0C68E8BAD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8823E03FADC06A61BDCB7E23 /* Pods_HourTech.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EBA5C6BDDB19E7ED1FC2FAF0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21C4EC4B455B958C10713954 /* Pods-HourTech.debug.xcconfig */,
+				30A5A7E04420897ECA987B65 /* Pods-HourTech.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +134,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7AA677D922250BDC00F6B596 /* Build configuration list for PBXNativeTarget "HourTech" */;
 			buildPhases = (
+				A08383AD6049E76708E04EF9 /* [CP] Check Pods Manifest.lock */,
 				7AA677C322250BDB00F6B596 /* Sources */,
 				7AA677C422250BDB00F6B596 /* Frameworks */,
 				7AA677C522250BDB00F6B596 /* Resources */,
+				7B02C3754F95FC269031ECC7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AA677D522250BDC00F6B596 /* LaunchScreen.storyboard in Resources */,
+				90AE6EA3222690F50022A0A2 /* GoogleService-Info.plist in Resources */,
 				7AA677D222250BDC00F6B596 /* Assets.xcassets in Resources */,
 				7AA677D022250BDB00F6B596 /* Main.storyboard in Resources */,
 			);
@@ -130,13 +196,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7B02C3754F95FC269031ECC7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HourTech/Pods-HourTech-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HourTech/Pods-HourTech-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A08383AD6049E76708E04EF9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HourTech-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7AA677C322250BDB00F6B596 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90AE6EA92226C3540022A0A2 /* SeachOutputViewController.swift in Sources */,
+				90211C762226FBAB007423F0 /* Keyword.swift in Sources */,
+				90AE6EA52226C2A50022A0A2 /* LoginViewController.swift in Sources */,
 				7AA677CD22250BDB00F6B596 /* ViewController.swift in Sources */,
 				7AA677CB22250BDB00F6B596 /* AppDelegate.swift in Sources */,
+				90AE6EA72226C3390022A0A2 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,16 +403,17 @@
 		};
 		7AA677DA22250BDC00F6B596 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21C4EC4B455B958C10713954 /* Pods-HourTech.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NNZ852MZXY;
+				DEVELOPMENT_TEAM = 582MADH86K;
 				INFOPLIST_FILE = HourTech/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.maggievu.HourTech;
+				PRODUCT_BUNDLE_IDENTIFIER = com.noppawith.HourTech;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -298,16 +422,17 @@
 		};
 		7AA677DB22250BDC00F6B596 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30A5A7E04420897ECA987B65 /* Pods-HourTech.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NNZ852MZXY;
+				DEVELOPMENT_TEAM = 582MADH86K;
 				INFOPLIST_FILE = HourTech/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.maggievu.HourTech;
+				PRODUCT_BUNDLE_IDENTIFIER = com.noppawith.HourTech;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
