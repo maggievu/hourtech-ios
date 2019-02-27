@@ -18,6 +18,7 @@
 		7AF175232226FD8300478A7F /* TechkyProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF175222226FD8300478A7F /* TechkyProfile.swift */; };
 		7AF17525222705D500478A7F /* TechkyProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF17524222705D500478A7F /* TechkyProfileTableViewCell.swift */; };
 		7AF175272227176D00478A7F /* TechkyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF175262227176D00478A7F /* TechkyProfileViewController.swift */; };
+		7AF1752922272EA700478A7F /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF1752822272EA700478A7F /* SignInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		7AF175222226FD8300478A7F /* TechkyProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechkyProfile.swift; sourceTree = "<group>"; };
 		7AF17524222705D500478A7F /* TechkyProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechkyProfileTableViewCell.swift; sourceTree = "<group>"; };
 		7AF175262227176D00478A7F /* TechkyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechkyProfileViewController.swift; sourceTree = "<group>"; };
+		7AF1752822272EA700478A7F /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = ViewControllers/SignInViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				7A3B27A522260C050030879A /* ViewControllers */,
 				7AA677CA22250BDB00F6B596 /* AppDelegate.swift */,
 				7AA677CE22250BDB00F6B596 /* Main.storyboard */,
+				7AF1752822272EA700478A7F /* SignInViewController.swift */,
 				7AA677D122250BDC00F6B596 /* Assets.xcassets */,
 				7AA677D322250BDC00F6B596 /* LaunchScreen.storyboard */,
 				7AA677D622250BDC00F6B596 /* Info.plist */,
@@ -190,6 +193,7 @@
 				7A3B27AA22260CAC0030879A /* SignUpViewController.swift in Sources */,
 				7AF17525222705D500478A7F /* TechkyProfileTableViewCell.swift in Sources */,
 				7AF175272227176D00478A7F /* TechkyProfileViewController.swift in Sources */,
+				7AF1752922272EA700478A7F /* SignInViewController.swift in Sources */,
 				7AF175232226FD8300478A7F /* TechkyProfile.swift in Sources */,
 				7AA677CB22250BDB00F6B596 /* AppDelegate.swift in Sources */,
 				7AF175212226E47F00478A7F /* SearchResultsViewController.swift in Sources */,
