@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A3B27AA22260CAC0030879A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3B27A922260CAC0030879A /* SignUpViewController.swift */; };
 		7AA677CB22250BDB00F6B596 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA677CA22250BDB00F6B596 /* AppDelegate.swift */; };
 		7AA677CD22250BDB00F6B596 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA677CC22250BDB00F6B596 /* ViewController.swift */; };
 		7AA677D022250BDB00F6B596 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AA677CE22250BDB00F6B596 /* Main.storyboard */; };
 		7AA677D222250BDC00F6B596 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AA677D122250BDC00F6B596 /* Assets.xcassets */; };
 		7AA677D522250BDC00F6B596 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AA677D322250BDC00F6B596 /* LaunchScreen.storyboard */; };
+		7AA677DD2225124F00F6B596 /* BackgroundCAGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA677DC2225124F00F6B596 /* BackgroundCAGradientLayer.swift */; };
+		7AF175212226E47F00478A7F /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF175202226E47F00478A7F /* SearchResultsViewController.swift */; };
+		7AF175232226FD8300478A7F /* TechkyProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF175222226FD8300478A7F /* TechkyProfile.swift */; };
+		7AF17525222705D500478A7F /* TechkyProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF17524222705D500478A7F /* TechkyProfileTableViewCell.swift */; };
+		7AF175272227176D00478A7F /* TechkyProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF175262227176D00478A7F /* TechkyProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A3B27A922260CAC0030879A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		7AA677C722250BDB00F6B596 /* HourTech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HourTech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AA677CA22250BDB00F6B596 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AA677CC22250BDB00F6B596 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,11 @@
 		7AA677D122250BDC00F6B596 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AA677D422250BDC00F6B596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7AA677D622250BDC00F6B596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7AA677DC2225124F00F6B596 /* BackgroundCAGradientLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundCAGradientLayer.swift; sourceTree = "<group>"; };
+		7AF175202226E47F00478A7F /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
+		7AF175222226FD8300478A7F /* TechkyProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechkyProfile.swift; sourceTree = "<group>"; };
+		7AF17524222705D500478A7F /* TechkyProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechkyProfileTableViewCell.swift; sourceTree = "<group>"; };
+		7AF175262227176D00478A7F /* TechkyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechkyProfileViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +47,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A3B27A522260C050030879A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7AA677CC22250BDB00F6B596 /* ViewController.swift */,
+				7A3B27A922260CAC0030879A /* SignUpViewController.swift */,
+				7AF175202226E47F00478A7F /* SearchResultsViewController.swift */,
+				7AF175262227176D00478A7F /* TechkyProfileViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		7A3B27A622260C180030879A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7AA677DC2225124F00F6B596 /* BackgroundCAGradientLayer.swift */,
+				7AF17524222705D500478A7F /* TechkyProfileTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7A3B27A722260C1D0030879A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7AF175222226FD8300478A7F /* TechkyProfile.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7A3B27A822260C3C0030879A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		7AA677BE22250BDB00F6B596 = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +101,11 @@
 		7AA677C922250BDB00F6B596 /* HourTech */ = {
 			isa = PBXGroup;
 			children = (
+				7A3B27A822260C3C0030879A /* Extensions */,
+				7A3B27A722260C1D0030879A /* Models */,
+				7A3B27A622260C180030879A /* Views */,
+				7A3B27A522260C050030879A /* ViewControllers */,
 				7AA677CA22250BDB00F6B596 /* AppDelegate.swift */,
-				7AA677CC22250BDB00F6B596 /* ViewController.swift */,
 				7AA677CE22250BDB00F6B596 /* Main.storyboard */,
 				7AA677D122250BDC00F6B596 /* Assets.xcassets */,
 				7AA677D322250BDC00F6B596 /* LaunchScreen.storyboard */,
@@ -136,7 +186,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AA677CD22250BDB00F6B596 /* ViewController.swift in Sources */,
+				7AA677DD2225124F00F6B596 /* BackgroundCAGradientLayer.swift in Sources */,
+				7A3B27AA22260CAC0030879A /* SignUpViewController.swift in Sources */,
+				7AF17525222705D500478A7F /* TechkyProfileTableViewCell.swift in Sources */,
+				7AF175272227176D00478A7F /* TechkyProfileViewController.swift in Sources */,
+				7AF175232226FD8300478A7F /* TechkyProfile.swift in Sources */,
 				7AA677CB22250BDB00F6B596 /* AppDelegate.swift in Sources */,
+				7AF175212226E47F00478A7F /* SearchResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
