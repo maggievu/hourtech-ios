@@ -11,11 +11,14 @@ import UIKit
 class ViewController: UIViewController {
 
     private var gradient: CAGradientLayer!
+    @IBOutlet weak var searchTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.isHidden = true
         self.navigationController?.navigationBar.setValue(true, forKey: "hidesShadow")
+        self.setupHideKeyboardOnTap()
+
         
         gradient = CAGradientLayer()
         gradient.frame = view.bounds
