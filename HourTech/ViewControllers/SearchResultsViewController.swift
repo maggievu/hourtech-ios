@@ -18,6 +18,7 @@ class SearchResultsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setupHideKeyboardOnTap()
         
 //        searchTableView.rowHeight = UITableView.automaticDimension
 //        searchTableView.estimatedRowHeight = 500
