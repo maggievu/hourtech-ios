@@ -11,7 +11,7 @@ import UIKit
 
 extension UIViewController {
     /// Call this once to dismiss open keyboards by tapping anywhere in the view controller
-    func setupHideKeyboardOnTap() {
+    func dismissKeyboardOnTap() {
         self.view.addGestureRecognizer(self.endEditingRecognizer())
     self.navigationController?.navigationBar.addGestureRecognizer(self.endEditingRecognizer())
     }
