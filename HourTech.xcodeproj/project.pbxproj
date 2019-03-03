@@ -15,6 +15,7 @@
 		7AA677D222250BDC00F6B596 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AA677D122250BDC00F6B596 /* Assets.xcassets */; };
 		7AA677D522250BDC00F6B596 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AA677D322250BDC00F6B596 /* LaunchScreen.storyboard */; };
 		7AA677DD2225124F00F6B596 /* BackgroundCAGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA677DC2225124F00F6B596 /* BackgroundCAGradientLayer.swift */; };
+		7AAE335B222B9E7B0033C537 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAE335A222B9E7B0033C537 /* UIView.swift */; };
 		7AF175212226E47F00478A7F /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF175202226E47F00478A7F /* SearchResultsViewController.swift */; };
 		7AF175232226FD8300478A7F /* TechkyProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF175222226FD8300478A7F /* TechkyProfile.swift */; };
 		7AF17525222705D500478A7F /* TechkyProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF17524222705D500478A7F /* TechkyProfileTableViewCell.swift */; };
@@ -35,6 +36,7 @@
 		7AA677D422250BDC00F6B596 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7AA677D622250BDC00F6B596 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7AA677DC2225124F00F6B596 /* BackgroundCAGradientLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundCAGradientLayer.swift; sourceTree = "<group>"; };
+		7AAE335A222B9E7B0033C537 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		7AF175202226E47F00478A7F /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 		7AF175222226FD8300478A7F /* TechkyProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechkyProfile.swift; sourceTree = "<group>"; };
 		7AF17524222705D500478A7F /* TechkyProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechkyProfileTableViewCell.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 			children = (
 				7AF1752C222760BF00478A7F /* UIViewController.swift */,
 				7AF1752A22275EE300478A7F /* TextFieldDelegate.swift */,
+				7AAE335A222B9E7B0033C537 /* UIView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AAE335B222B9E7B0033C537 /* UIView.swift in Sources */,
 				7AA677CD22250BDB00F6B596 /* ViewController.swift in Sources */,
 				51D8A41F222B7D0C004650FB /* RootTabBarController.swift in Sources */,
 				7AA677DD2225124F00F6B596 /* BackgroundCAGradientLayer.swift in Sources */,

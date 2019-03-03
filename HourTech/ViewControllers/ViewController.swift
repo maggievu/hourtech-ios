@@ -18,6 +18,8 @@ class ViewController: UIViewController {
         self.navigationController?.navigationBar.isHidden = true
         self.navigationController?.navigationBar.setValue(true, forKey: "hidesShadow")
         self.dismissKeyboardOnTap()
+        
+        view.addBackground()
 
         
         gradient = CAGradientLayer()

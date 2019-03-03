@@ -141,7 +141,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Wu-Te-P44" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1422" y="1564"/>
+            <point key="canvasLocation" x="1421.5999999999999" y="1563.8680659670167"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="GOY-L7-fz0">
@@ -338,7 +338,7 @@
             </objects>
             <point key="canvasLocation" x="1767.2" y="792.95352323838085"/>
         </scene>
-        <!--Account-->
+        <!--View Controller-->
         <scene sceneID="zQt-55-H9e">
             <objects>
                 <viewController id="fh9-V3-eBu" sceneMemberID="viewController">
@@ -348,13 +348,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="dqx-CR-Fvr"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Account" id="5X0-op-LSs"/>
+                    <tabBarItem key="tabBarItem" title="" image="inactive-profile" selectedImage="profile" id="5X0-op-LSs">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6m6-gM-JKM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3630" y="-613"/>
         </scene>
-        <!--Search-->
+        <!--Search Results View Controller-->
         <scene sceneID="fV5-km-BV8">
             <objects>
                 <viewController id="JhK-xT-6N7" customClass="SearchResultsViewController" customModule="HourTech" customModuleProvider="target" sceneMemberID="viewController">
@@ -431,6 +433,7 @@
                                                 <constraint firstItem="tOi-J1-f1Z" firstAttribute="top" secondItem="Y4O-Ll-0cf" secondAttribute="top" id="cwb-Mw-wsu"/>
                                                 <constraint firstItem="Y4O-Ll-0cf" firstAttribute="leading" secondItem="KHI-sS-WSO" secondAttribute="leading" id="eN9-Dz-Hvx"/>
                                                 <constraint firstItem="KHI-sS-WSO" firstAttribute="leading" secondItem="g1g-II-cT7" secondAttribute="leading" id="mSc-o0-ac4"/>
+                                                <constraint firstItem="kFD-2i-ddO" firstAttribute="leading" relation="lessThanOrEqual" secondItem="g1g-II-cT7" secondAttribute="leadingMargin" constant="234" id="o8v-3n-wYJ"/>
                                                 <constraint firstItem="kFD-2i-ddO" firstAttribute="top" secondItem="Y4O-Ll-0cf" secondAttribute="bottom" constant="16" id="r4d-Qz-4r8"/>
                                                 <constraint firstAttribute="trailing" secondItem="kFD-2i-ddO" secondAttribute="trailing" constant="20" symbolic="YES" id="snL-7j-ccF"/>
                                                 <constraint firstAttribute="trailing" secondItem="tOi-J1-f1Z" secondAttribute="trailing" id="ucb-Gy-Nfp"/>
@@ -475,7 +478,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kvI-DY-Nop"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Search" id="lhQ-Oq-h1L"/>
+                    <tabBarItem key="tabBarItem" title="" image="inactive-search" selectedImage="search" id="lhQ-Oq-h1L">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="additionalNavigationBackground" destination="hJg-JC-9mh" id="iiG-ko-Z8E"/>
                         <outlet property="searchTableView" destination="mew-ho-avq" id="eX8-Ob-Ivv"/>
@@ -487,7 +492,7 @@
             </objects>
             <point key="canvasLocation" x="3630" y="793"/>
         </scene>
-        <!--Message-->
+        <!--View Controller-->
         <scene sceneID="rvL-ao-eLP">
             <objects>
                 <viewController id="gPj-qZ-AhE" sceneMemberID="viewController">
@@ -497,11 +502,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="r42-5G-QSu"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Message" id="ptX-7C-6eq"/>
+                    <tabBarItem key="tabBarItem" title="" image="inactive-messages" selectedImage="messages" id="ptX-7C-6eq">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="imP-sP-w0p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3630" y="1513"/>
+            <point key="canvasLocation" x="3630" y="1525"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ezd-xf-P1b">
@@ -513,13 +520,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="UgC-W3-Idg"/>
                     </view>
-                    <tabBarItem key="tabBarItem" id="AhC-a1-6jv"/>
+                    <tabBarItem key="tabBarItem" title="" image="inactive-hamburger" selectedImage="hamburger" id="AhC-a1-6jv">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ohw-vY-Gml" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3630" y="2225"/>
         </scene>
-        <!--Activity-->
+        <!--View Controller-->
         <scene sceneID="LxP-6b-kT0">
             <objects>
                 <viewController id="cHY-k5-XYI" sceneMemberID="viewController">
@@ -529,7 +538,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="GlP-Eq-kJf"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Activity" id="kb1-no-f1C"/>
+                    <tabBarItem key="tabBarItem" title="" image="inactive-activity" selectedImage="activity" id="kb1-no-f1C">
+                        <inset key="imageInsets" minX="0.0" minY="6" maxX="0.0" maxY="-6"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yeg-IN-YlO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -624,8 +635,11 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Cpz-9t-r1B" customClass="RootTabBarController" customModule="HourTech" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5Et-Iu-BGj">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.074509803920000006" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.074509803920000006" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="fh9-V3-eBu" kind="relationship" relationship="viewControllers" id="2Um-AM-W3S"/>
@@ -640,6 +654,18 @@
             <point key="canvasLocation" x="2642" y="793"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="activity" width="26.5" height="24.5"/>
+        <image name="hamburger" width="28.5" height="24.5"/>
+        <image name="inactive-activity" width="26.5" height="24.5"/>
+        <image name="inactive-hamburger" width="28.5" height="24"/>
+        <image name="inactive-messages" width="36.5" height="24.5"/>
+        <image name="inactive-profile" width="24.5" height="24.5"/>
+        <image name="inactive-search" width="26" height="24.5"/>
+        <image name="messages" width="36.5" height="24.5"/>
+        <image name="profile" width="24.5" height="24.5"/>
+        <image name="search" width="26" height="24.5"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="GHH-pg-1LL"/>
     </inferredMetricsTieBreakers>
