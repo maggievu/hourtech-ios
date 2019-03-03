@@ -45,13 +45,20 @@ class ViewController: UIViewController {
         self.navigationController?.navigationBar.isHidden = true
     }
     
-    @IBAction func signUpTapped(_ sender: UIButton) {
-//        performSegue(withIdentifier: "signup_segue", sender: self)
+    @IBAction func searchIconTapped(_ sender: UIButton) {
+        performSegue(withIdentifier: "search_segue", sender: self)
     }
     
     @IBAction func searchTapped(_ sender: UIButton) {
         performSegue(withIdentifier: "search_segue", sender: self)
     }
     
+    @IBAction func signInTapped(_ sender: UIButton) {
+        performSegue(withIdentifier: "signin_segue", sender: self)
+    }
+    
+    @IBAction func signUpTapped(_ sender: UIButton) {
+        performSegue(withIdentifier: "signup_segue", sender: self)
+    }
 }
 
