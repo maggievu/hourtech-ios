@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51D8A41F222B7D0C004650FB /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D8A41E222B7D0C004650FB /* RootTabBarController.swift */; };
 		7A3B27AA22260CAC0030879A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3B27A922260CAC0030879A /* SignUpViewController.swift */; };
 		7AA677CB22250BDB00F6B596 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA677CA22250BDB00F6B596 /* AppDelegate.swift */; };
 		7AA677CD22250BDB00F6B596 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA677CC22250BDB00F6B596 /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		51D8A41E222B7D0C004650FB /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
 		7A3B27A922260CAC0030879A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		7AA677C722250BDB00F6B596 /* HourTech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HourTech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AA677CA22250BDB00F6B596 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -37,7 +39,7 @@
 		7AF175222226FD8300478A7F /* TechkyProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechkyProfile.swift; sourceTree = "<group>"; };
 		7AF17524222705D500478A7F /* TechkyProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechkyProfileTableViewCell.swift; sourceTree = "<group>"; };
 		7AF175262227176D00478A7F /* TechkyProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechkyProfileViewController.swift; sourceTree = "<group>"; };
-		7AF1752822272EA700478A7F /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = ViewControllers/SignInViewController.swift; sourceTree = "<group>"; };
+		7AF1752822272EA700478A7F /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		7AF1752A22275EE300478A7F /* TextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDelegate.swift; sourceTree = "<group>"; };
 		7AF1752C222760BF00478A7F /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,6 +58,7 @@
 		7A3B27A522260C050030879A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				7AF1752822272EA700478A7F /* SignInViewController.swift */,
 				7AA677CC22250BDB00F6B596 /* ViewController.swift */,
 				7A3B27A922260CAC0030879A /* SignUpViewController.swift */,
 				7AF175202226E47F00478A7F /* SearchResultsViewController.swift */,
@@ -67,6 +70,7 @@
 		7A3B27A622260C180030879A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				51D8A41E222B7D0C004650FB /* RootTabBarController.swift */,
 				7AA677DC2225124F00F6B596 /* BackgroundCAGradientLayer.swift */,
 				7AF17524222705D500478A7F /* TechkyProfileTableViewCell.swift */,
 			);
@@ -115,7 +119,6 @@
 				7A3B27A522260C050030879A /* ViewControllers */,
 				7AA677CA22250BDB00F6B596 /* AppDelegate.swift */,
 				7AA677CE22250BDB00F6B596 /* Main.storyboard */,
-				7AF1752822272EA700478A7F /* SignInViewController.swift */,
 				7AA677D122250BDC00F6B596 /* Assets.xcassets */,
 				7AA677D322250BDC00F6B596 /* LaunchScreen.storyboard */,
 				7AA677D622250BDC00F6B596 /* Info.plist */,
@@ -195,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AA677CD22250BDB00F6B596 /* ViewController.swift in Sources */,
+				51D8A41F222B7D0C004650FB /* RootTabBarController.swift in Sources */,
 				7AA677DD2225124F00F6B596 /* BackgroundCAGradientLayer.swift in Sources */,
 				7A3B27AA22260CAC0030879A /* SignUpViewController.swift in Sources */,
 				7AF1752D222760BF00478A7F /* UIViewController.swift in Sources */,

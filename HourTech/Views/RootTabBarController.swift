@@ -1,35 +1,23 @@
 //
-//  SignInViewController.swift
+//  RootTabBarController.swift
 //  HourTech
 //
-//  Created by Maggie on 2019-02-27.
+//  Created by London Drugs on 2019-03-02.
 //  Copyright © 2019 Maggie VU. All rights reserved.
 //
 
 import UIKit
 
-class SignInViewController: UIViewController {
+class RootTabBarController: UITabBarController {
 
-    @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.dismissKeyboardOnTap()
-
-//        self.definesPresentationContext = true
+        selectedIndex = 2
 
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func closeSignInTapped(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil)
-    }
-    
-    @IBAction func needToRegisterTapped(_ sender: UIButton) {
-        performSegue(withIdentifier: "signup_signin_segue", sender: self)
-    }
-    
+
     /*
     // MARK: - Navigation
 
