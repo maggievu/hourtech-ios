@@ -24,6 +24,7 @@
 		7AF1752922272EA700478A7F /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF1752822272EA700478A7F /* SignInViewController.swift */; };
 		7AF1752B22275EE300478A7F /* TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF1752A22275EE300478A7F /* TextFieldDelegate.swift */; };
 		7AF1752D222760BF00478A7F /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF1752C222760BF00478A7F /* UIViewController.swift */; };
+		90C2B9D0222C69EC00576F67 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 90C2B9CE222C69EC00576F67 /* DataModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		7AF1752822272EA700478A7F /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		7AF1752A22275EE300478A7F /* TextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDelegate.swift; sourceTree = "<group>"; };
 		7AF1752C222760BF00478A7F /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		90C2B9CF222C69EC00576F67 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 		7A3B27A722260C1D0030879A /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				90C2B9CE222C69EC00576F67 /* DataModel.xcdatamodeld */,
 				7AF175222226FD8300478A7F /* TechkyProfile.swift */,
 			);
 			path = Models;
@@ -209,6 +212,7 @@
 				7AA677DD2225124F00F6B596 /* BackgroundCAGradientLayer.swift in Sources */,
 				7A3B27AA22260CAC0030879A /* SignUpViewController.swift in Sources */,
 				7AF1752D222760BF00478A7F /* UIViewController.swift in Sources */,
+				90C2B9D0222C69EC00576F67 /* DataModel.xcdatamodeld in Sources */,
 				7AF17525222705D500478A7F /* TechkyProfileTableViewCell.swift in Sources */,
 				7AF175272227176D00478A7F /* TechkyProfileViewController.swift in Sources */,
 				7AF1752922272EA700478A7F /* SignInViewController.swift in Sources */,
@@ -363,13 +367,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NNZ852MZXY;
+				DEVELOPMENT_TEAM = 582MADH86K;
 				INFOPLIST_FILE = HourTech/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.maggievu.HourTech;
+				PRODUCT_BUNDLE_IDENTIFIER = com.noppawith.HourTech;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -381,13 +385,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NNZ852MZXY;
+				DEVELOPMENT_TEAM = 582MADH86K;
 				INFOPLIST_FILE = HourTech/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.maggievu.HourTech;
+				PRODUCT_BUNDLE_IDENTIFIER = com.noppawith.HourTech;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -416,6 +420,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		90C2B9CE222C69EC00576F67 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				90C2B9CF222C69EC00576F67 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 90C2B9CF222C69EC00576F67 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7AA677BF22250BDB00F6B596 /* Project object */;
 }

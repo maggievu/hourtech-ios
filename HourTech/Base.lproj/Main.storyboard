@@ -38,7 +38,7 @@
                                             <fragment content="SIGN IN">
                                                 <attributes>
                                                     <color key="NSColor" red="0.082352941176470587" green="0.29411764705882354" blue="0.61176470588235299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="22" name="Overpass-Bold"/>
+                                                    <font key="NSFont" metaFont="system" size="22"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -168,7 +168,7 @@
                                             <fragment content="SIGN UP">
                                                 <attributes>
                                                     <color key="NSColor" red="0.082352941176470587" green="0.29411764705882354" blue="0.61176470588235299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    <font key="NSFont" size="22" name="Overpass-Bold"/>
+                                                    <font key="NSFont" metaFont="system" size="22"/>
                                                     <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 </attributes>
                                             </fragment>
@@ -408,17 +408,12 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="dUV-br-Mju">
-                                <rect key="frame" x="16" y="0.0" width="343" height="30"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" searchField="YES"/>
-                                </accessibility>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="KLx-Ai-Yxi">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
                                 <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mew-ho-avq">
-                                <rect key="frame" x="16" y="83" width="343" height="471"/>
+                                <rect key="frame" x="16" y="93" width="343" height="461"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="profileCell" rowHeight="200" id="iuL-0M-hoY" customClass="TechkyProfileTableViewCell" customModule="HourTech" customModuleProvider="target">
@@ -498,8 +493,8 @@
                                     <outlet property="delegate" destination="JhK-xT-6N7" id="jYc-MD-nLn"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 results found for &quot;bla bla&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ob2-89-jvt">
-                                <rect key="frame" x="16" y="46" width="343" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 results found for &quot;All&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ob2-89-jvt">
+                                <rect key="frame" x="16" y="61" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -507,27 +502,28 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ob2-89-jvt" firstAttribute="leading" secondItem="dUV-br-Mju" secondAttribute="leading" id="3fp-x7-aPI"/>
-                            <constraint firstItem="dUV-br-Mju" firstAttribute="leading" secondItem="kvI-DY-Nop" secondAttribute="leading" constant="16" id="BK3-dQ-gPz"/>
+                            <constraint firstItem="KLx-Ai-Yxi" firstAttribute="top" secondItem="kvI-DY-Nop" secondAttribute="top" id="3ja-6r-OWz"/>
+                            <constraint firstItem="KLx-Ai-Yxi" firstAttribute="trailing" secondItem="kvI-DY-Nop" secondAttribute="trailing" id="9dE-CM-9ml"/>
                             <constraint firstItem="kvI-DY-Nop" firstAttribute="bottom" secondItem="mew-ho-avq" secondAttribute="bottom" id="FF7-se-WP8"/>
-                            <constraint firstItem="kvI-DY-Nop" firstAttribute="trailing" secondItem="dUV-br-Mju" secondAttribute="trailing" constant="16" id="Loc-1Z-EzT"/>
-                            <constraint firstItem="mew-ho-avq" firstAttribute="top" secondItem="ob2-89-jvt" secondAttribute="bottom" constant="16" id="WyJ-fY-1Wu"/>
-                            <constraint firstItem="ob2-89-jvt" firstAttribute="trailing" secondItem="dUV-br-Mju" secondAttribute="trailing" id="Yl2-Rq-Mi5"/>
+                            <constraint firstItem="kvI-DY-Nop" firstAttribute="trailing" secondItem="ob2-89-jvt" secondAttribute="trailing" constant="16" id="U1s-us-ixP"/>
+                            <constraint firstItem="mew-ho-avq" firstAttribute="top" secondItem="ob2-89-jvt" secondAttribute="bottom" constant="11" id="WyJ-fY-1Wu"/>
                             <constraint firstItem="mew-ho-avq" firstAttribute="leading" secondItem="ob2-89-jvt" secondAttribute="leading" id="bwQ-Dl-WVd"/>
                             <constraint firstItem="mew-ho-avq" firstAttribute="trailing" secondItem="ob2-89-jvt" secondAttribute="trailing" id="gxy-3f-IHN"/>
+                            <constraint firstItem="ob2-89-jvt" firstAttribute="leading" secondItem="kvI-DY-Nop" secondAttribute="leading" constant="16" id="m0A-uN-l0G"/>
                             <constraint firstItem="hJg-JC-9mh" firstAttribute="trailing" secondItem="kvI-DY-Nop" secondAttribute="trailing" id="mJ1-9W-bVq"/>
+                            <constraint firstItem="ob2-89-jvt" firstAttribute="top" secondItem="KLx-Ai-Yxi" secondAttribute="bottom" constant="5" id="nAg-tE-HeE"/>
+                            <constraint firstItem="KLx-Ai-Yxi" firstAttribute="leading" secondItem="kvI-DY-Nop" secondAttribute="leading" id="rP2-IN-8py"/>
                             <constraint firstItem="hJg-JC-9mh" firstAttribute="leading" secondItem="kvI-DY-Nop" secondAttribute="leading" id="sEI-ne-Omv"/>
-                            <constraint firstItem="dUV-br-Mju" firstAttribute="top" secondItem="kvI-DY-Nop" secondAttribute="top" id="t9E-9N-urU"/>
                             <constraint firstItem="hJg-JC-9mh" firstAttribute="top" secondItem="kvI-DY-Nop" secondAttribute="top" id="v2x-WF-T3m"/>
-                            <constraint firstItem="ob2-89-jvt" firstAttribute="top" secondItem="dUV-br-Mju" secondAttribute="bottom" constant="16" id="vcG-ee-b0X"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kvI-DY-Nop"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Search" image="inactive-search" selectedImage="search" id="lhQ-Oq-h1L"/>
                     <connections>
                         <outlet property="additionalNavigationBackground" destination="hJg-JC-9mh" id="iiG-ko-Z8E"/>
+                        <outlet property="searchBar" destination="KLx-Ai-Yxi" id="h9q-Ta-CTx"/>
+                        <outlet property="searchStatusLabel" destination="ob2-89-jvt" id="BAd-aV-5ww"/>
                         <outlet property="searchTableView" destination="mew-ho-avq" id="eX8-Ob-Ivv"/>
-                        <outlet property="searchTextField" destination="dUV-br-Mju" id="QZq-YX-B6z"/>
                         <segue destination="nj5-LP-wIo" kind="show" identifier="techky_profile_segue" id="dE3-gZ-eml"/>
                     </connections>
                 </viewController>

@@ -15,15 +15,15 @@ class TechkyProfileViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     
-    var profile: TechkyProfile?
+    var profile: Techky_Profile?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         if let profile = profile {
-            nameLabel.text = profile.firstName + " " + profile.lastName
+            nameLabel.text = profile.firstname! + " " + profile.lastname!
             titleLabel.text = profile.title
-            descriptionLabel.text = profile.description
+            descriptionLabel.text = profile.profile_description
         }
 
         // Do any additional setup after loading the view.

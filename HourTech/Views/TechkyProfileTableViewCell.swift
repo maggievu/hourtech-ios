@@ -33,10 +33,10 @@ class TechkyProfileTableViewCell: UITableViewCell {
         techkyDescriptionLabel.text = ""
     }
     
-    func configurateCell(_ profile: TechkyProfile) {
-        techkyNameLabel.text = profile.firstName + " " + profile.lastName
+    func configurateCell(_ profile: Techky_Profile) {
+        techkyNameLabel.text = profile.firstname! + " " + profile.lastname!
         techkyTitleLabel.text = profile.title
-        techkyDescriptionLabel.text = profile.description
+        techkyDescriptionLabel.text = profile.profile_description
     }
 
 }
