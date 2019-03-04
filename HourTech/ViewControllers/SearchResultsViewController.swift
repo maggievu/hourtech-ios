@@ -14,7 +14,6 @@ class SearchResultsViewController: UIViewController {
 //    var techkyProfiles = TechkyProfile.createProfile()
     var techkyProfiles = [Techky_Profile]()
 
-    @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var additionalNavigationBackground: UILabel!
     @IBOutlet weak var searchTableView: UITableView!
     
@@ -27,9 +26,13 @@ class SearchResultsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController?.navigationBar.setValue(true, forKey: "hidesShadow")
+        
         searchBar.delegate = self
+        searchBar.backgroundImage = UIImage()
         
         self.dismissKeyboardOnTap()
+        searchStatusLabel.text = ""
         
 //        searchTableView.rowHeight = UITableView.automaticDimension
 //        searchTableView.estimatedRowHeight = 500
@@ -58,28 +61,28 @@ class SearchResultsViewController: UIViewController {
         let newProfile1 = Techky_Profile(context: context)
         newProfile1.firstname = "Maggie"
         newProfile1.lastname = "Vu"
-        newProfile1.title = "Full-stack Developer"
+        newProfile1.title = "Developer"
         newProfile1.profile_description = "Highly motivated bla bla bla bla"
         techkyProfiles.append(newProfile1)
         
         let newProfile2 = Techky_Profile(context: context)
         newProfile2.firstname = "Diego"
         newProfile2.lastname = "Rodrigues De Oliveira"
-        newProfile2.title = "Front-end Developer"
+        newProfile2.title = "Developer"
         newProfile2.profile_description = "Skillful, hard-working. 2-year student at Langara. Available for design, presentation, logo design..."
         techkyProfiles.append(newProfile2)
         
         let newProfile3 = Techky_Profile(context: context)
         newProfile3.firstname = "Noppawit"
         newProfile3.lastname = "Hansompob"
-        newProfile3.title = "Back-end Developer"
+        newProfile3.title = "Developer"
         newProfile3.profile_description = "Skillful, hard-working. 2-year student at Langara. Available for design, presentation, logo design..."
         techkyProfiles.append(newProfile3)
         
         let newProfile4 = Techky_Profile(context: context)
         newProfile4.firstname = "Andra"
         newProfile4.lastname = "Iskandar"
-        newProfile4.title = "Quality Assurance Developer"
+        newProfile4.title = "Developer"
         newProfile4.profile_description = "Skillful, hard-working. 2-year student at Langara. Available for design, presentation, logo design..."
         techkyProfiles.append(newProfile4)
         

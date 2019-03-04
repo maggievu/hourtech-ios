@@ -13,27 +13,18 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var rePasswordTextField: UITextField!
+    @IBOutlet weak var navigationBarSignUp: UINavigationBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.dismissKeyboardOnTap()
+        navigationBarSignUp.setValue(true, forKey: "hidesShadow")
 
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func closeSignUpTapped(_ sender: UIButton) {
+    @IBAction func closeSignUpTapped(_ sender: UIBarButtonItem) {
         dismiss(animated: true, completion: nil)
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//
-//    }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    */
-
 }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		51D8A41F222B7D0C004650FB /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D8A41E222B7D0C004650FB /* RootTabBarController.swift */; };
+		7A11B955222D1E4D00B30C0B /* MoreRoundedUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A11B954222D1E4D00B30C0B /* MoreRoundedUIButton.swift */; };
 		7A3B27AA22260CAC0030879A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3B27A922260CAC0030879A /* SignUpViewController.swift */; };
 		7AA677CB22250BDB00F6B596 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA677CA22250BDB00F6B596 /* AppDelegate.swift */; };
 		7AA677CD22250BDB00F6B596 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA677CC22250BDB00F6B596 /* ViewController.swift */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		51D8A41E222B7D0C004650FB /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
+		7A11B954222D1E4D00B30C0B /* MoreRoundedUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreRoundedUIButton.swift; sourceTree = "<group>"; };
 		7A3B27A922260CAC0030879A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		7AA677C722250BDB00F6B596 /* HourTech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HourTech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AA677CA22250BDB00F6B596 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				7AA677DC2225124F00F6B596 /* BackgroundCAGradientLayer.swift */,
 				7AF17524222705D500478A7F /* TechkyProfileTableViewCell.swift */,
 				7AAE335E222BC2980033C537 /* RoundedCornerUIButton.swift */,
+				7A11B954222D1E4D00B30C0B /* MoreRoundedUIButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -208,6 +211,7 @@
 			files = (
 				7AAE335B222B9E7B0033C537 /* UIView.swift in Sources */,
 				7AA677CD22250BDB00F6B596 /* ViewController.swift in Sources */,
+				7A11B955222D1E4D00B30C0B /* MoreRoundedUIButton.swift in Sources */,
 				51D8A41F222B7D0C004650FB /* RootTabBarController.swift in Sources */,
 				7AA677DD2225124F00F6B596 /* BackgroundCAGradientLayer.swift in Sources */,
 				7A3B27AA22260CAC0030879A /* SignUpViewController.swift in Sources */,
@@ -367,13 +371,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 582MADH86K;
+				DEVELOPMENT_TEAM = NNZ852MZXY;
 				INFOPLIST_FILE = HourTech/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.noppawith.HourTech;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maggievu.HourTech;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -385,13 +389,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 582MADH86K;
+				DEVELOPMENT_TEAM = NNZ852MZXY;
 				INFOPLIST_FILE = HourTech/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.noppawith.HourTech;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maggievu.HourTech;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
