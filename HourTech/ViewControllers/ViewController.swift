@@ -12,7 +12,14 @@ import CoreData
 class ViewController: UIViewController {
 
     private var gradient: CAGradientLayer!
+    let duration:Double = 1.0
+    let delay:Double = 0
+    
     @IBOutlet weak var searchTextField: UITextField!
+    @IBOutlet weak var searchInstructionLabel: UILabel!
+    @IBOutlet weak var logoImageView: UIImageView!
+    @IBOutlet weak var searchButtonLabel: RoundedCornerUIButton!
+    @IBOutlet weak var searchIconLabel: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,19 +28,18 @@ class ViewController: UIViewController {
         self.dismissKeyboardOnTap()
         
         view.addBackground()
+        
+        UIView.animate(withDuration: duration, delay: delay, options: .curveEaseIn, animations: {
+            self.moveUp(view: self.logoImageView)
+        }, completion: nil)
+        
+        UIView.animate(withDuration: duration, delay: delay, options: .curveEaseOut, animations: {
+            self.showFade(view: self.searchInstructionLabel)
+            self.showFade(view: self.searchTextField)
+            self.showFade(view: self.searchButtonLabel)
+            self.showFade(view: self.searchIconLabel)
+      }, completion: nil)
 
-        
-        gradient = CAGradientLayer()
-        gradient.frame = view.bounds
-//        gradient.frame = UIScreen.main.bounds
-        gradient.colors = [UIColor.blue.cgColor, UIColor.cyan.cgColor]
-        gradient.locations = [0, 1]
-//        view.layer.addSublayer(gradient)
-        
-//        let gradient = BackgroundCAGradientLayer(start: .topLeft, end: .bottomRight, colors: [UIColor.black.cgColor, UIColor.white.cgColor], type: .axial)
-//
-//        gradient.frame = view.bounds
-//        view.layer.addSublayer(gradient)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -61,6 +67,7 @@ class ViewController: UIViewController {
     @IBAction func signUpTapped(_ sender: UIButton) {
         performSegue(withIdentifier: "signup_segue", sender: self)
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "search_segue" {
             if let tabBarVC = segue.destination as? RootTabBarController{
@@ -69,5 +76,19 @@ class ViewController: UIViewController {
             }
         }
     }
+    
+    func moveUp(view: UIView) {
+//        view.transform.translatedBy(x: 0, y: -350)
+        view.frame.size.height -= 350
+        view.transform = CGAffineTransform(translationX: 0.0, y: -200)
+//        view.transform = CGAffineTransform(scaleX: 0.55, y: 0.55)
+    }
+    
+    func showFade(view: UIView){
+        view.alpha = 1.0
+        view.transform = CGAffineTransform(translationX: 0.0, y: -50)
+        view.frame.size.height -= 350
+    }
+    
 }
 
