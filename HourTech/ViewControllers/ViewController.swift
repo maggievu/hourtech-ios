@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController {
 
@@ -59,6 +60,14 @@ class ViewController: UIViewController {
     
     @IBAction func signUpTapped(_ sender: UIButton) {
         performSegue(withIdentifier: "signup_segue", sender: self)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "search_segue" {
+            if let tabBarVC = segue.destination as? RootTabBarController{
+            
+                tabBarVC.searchKeyword = searchTextField.text!
+            }
+        }
     }
 }
 

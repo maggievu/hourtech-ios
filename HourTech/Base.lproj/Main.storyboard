@@ -439,13 +439,13 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tOi-J1-f1Z">
-                                                    <rect key="frame" x="76" y="84" width="267" height="16"/>
+                                                    <rect key="frame" x="76" y="84" width="306" height="16"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kFD-2i-ddO" customClass="RoundedCornerUIButton" customModule="HourTech" customModuleProvider="target">
-                                                    <rect key="frame" x="213" y="160" width="130" height="35"/>
+                                                    <rect key="frame" x="240" y="160" width="142" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="35" id="N92-Pu-s3K"/>
                                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="QYh-JQ-E0C"/>
@@ -456,7 +456,7 @@
                                                     </state>
                                                 </button>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stars" translatesAutoresizingMaskIntoConstraints="NO" id="4qZ-gl-76w">
-                                                    <rect key="frame" x="254" y="16" width="89" height="16"/>
+                                                    <rect key="frame" x="293" y="16" width="89" height="16"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -694,7 +694,6 @@
         <!--Navigation Controller-->
         <scene sceneID="1F2-Lj-Shf">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6a6-Gw-Nks" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fwh-vD-wBP" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="Q8l-Mn-Elk">
@@ -711,6 +710,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="icC-2d-owu"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6a6-Gw-Nks" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="988" y="793"/>
         </scene>
