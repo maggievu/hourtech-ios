@@ -21,6 +21,8 @@ class SearchResultsViewController: UIViewController {
     
     @IBOutlet weak var searchBar: UISearchBar!
     
+    var searchKeywordFromHome = ""
+    
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     override func viewDidLoad() {
@@ -40,13 +42,23 @@ class SearchResultsViewController: UIViewController {
         
         //MARK - Uncomment hardcodeProfile for the first time run after finished come back and comment it again since it is hardcoding.
 //        hardcodeProfile()
+        print("viewDidLoad: \(searchKeywordFromHome)")
         
+        if let tabBarVC = self.tabBarController as? RootTabBarController {
+            searchKeywordFromHome = tabBarVC.searchKeyword
+            searchBar.text = searchKeywordFromHome
+//          print("InsideClosureDidLoad: \(searchKeywordFromHome)")
+        }
         loadSearchResult()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
         self.navigationController?.navigationBar.isHidden = false
+        
+        searchBar(self.searchBar, textDidChange: searchKeywordFromHome)
+//        print("OutsideClosure: \(searchKeywordFromHome)")
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -119,9 +131,9 @@ class SearchResultsViewController: UIViewController {
     
     func updateStatusLabel(count: Int) {
         if count == 0 {
-            searchStatusLabel.text = "No result found for \(searchBar.text!)"
+            searchStatusLabel.text = "No result found for \"\(searchBar.text!)\""
         } else if count < 2 {
-            searchStatusLabel.text = "\(count) result found for \(searchBar.text!)"
+            searchStatusLabel.text = "\(count) result found for \"\(searchBar.text!)\""
         } else {
             searchStatusLabel.text = "\(count) results found for \"\(searchBar.text!)\""
         }
@@ -150,7 +162,12 @@ extension SearchResultsViewController: UITableViewDelegate, UITableViewDataSourc
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        searchKeywordFromHome = searchBar.text!
+//        print("didSelectRowAt: \(searchKeywordFromHome)")
+        
         performSegue(withIdentifier: "techky_profile_segue", sender: self)
+        
     }
     
 }
