@@ -1,0 +1,6 @@
+framework module Pods_HourTech {
+  umbrella header "Pods-HourTech-umbrella.h"
+
+  export *
+  module * { export * }
+}
