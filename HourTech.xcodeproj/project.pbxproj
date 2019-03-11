@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		51D8A41F222B7D0C004650FB /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D8A41E222B7D0C004650FB /* RootTabBarController.swift */; };
+		6B6F6DCACD894B09EDAFEA2D /* Pods_HourTech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B970D4BE4DFAF82C114DF3F5 /* Pods_HourTech.framework */; };
 		7A11B955222D1E4D00B30C0B /* MoreRoundedUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A11B954222D1E4D00B30C0B /* MoreRoundedUIButton.swift */; };
 		7A3B27AA22260CAC0030879A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3B27A922260CAC0030879A /* SignUpViewController.swift */; };
 		7AA677CB22250BDB00F6B596 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA677CA22250BDB00F6B596 /* AppDelegate.swift */; };
@@ -25,10 +26,13 @@
 		7AF1752922272EA700478A7F /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF1752822272EA700478A7F /* SignInViewController.swift */; };
 		7AF1752B22275EE300478A7F /* TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF1752A22275EE300478A7F /* TextFieldDelegate.swift */; };
 		7AF1752D222760BF00478A7F /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF1752C222760BF00478A7F /* UIViewController.swift */; };
+		9019AC7E22349D6C00431BF8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9019AC7D22349D6B00431BF8 /* GoogleService-Info.plist */; };
 		90C2B9D0222C69EC00576F67 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 90C2B9CE222C69EC00576F67 /* DataModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1045C7646F2C7E0AF6B4B9C8 /* Pods-HourTech.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HourTech.release.xcconfig"; path = "Target Support Files/Pods-HourTech/Pods-HourTech.release.xcconfig"; sourceTree = "<group>"; };
+		2F8A381B58AB61DA4ABA8621 /* Pods-HourTech.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HourTech.debug.xcconfig"; path = "Target Support Files/Pods-HourTech/Pods-HourTech.debug.xcconfig"; sourceTree = "<group>"; };
 		51D8A41E222B7D0C004650FB /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
 		7A11B954222D1E4D00B30C0B /* MoreRoundedUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreRoundedUIButton.swift; sourceTree = "<group>"; };
 		7A3B27A922260CAC0030879A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -49,7 +53,9 @@
 		7AF1752822272EA700478A7F /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		7AF1752A22275EE300478A7F /* TextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDelegate.swift; sourceTree = "<group>"; };
 		7AF1752C222760BF00478A7F /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		9019AC7D22349D6B00431BF8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		90C2B9CF222C69EC00576F67 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		B970D4BE4DFAF82C114DF3F5 /* Pods_HourTech.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HourTech.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B6F6DCACD894B09EDAFEA2D /* Pods_HourTech.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +118,8 @@
 			children = (
 				7AA677C922250BDB00F6B596 /* HourTech */,
 				7AA677C822250BDB00F6B596 /* Products */,
+				7D8F8E5E8705183677264FD6 /* Pods */,
+				DC4AC1AC74234526FD94C065 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,8 +143,27 @@
 				7AA677D122250BDC00F6B596 /* Assets.xcassets */,
 				7AA677D322250BDC00F6B596 /* LaunchScreen.storyboard */,
 				7AA677D622250BDC00F6B596 /* Info.plist */,
+				9019AC7D22349D6B00431BF8 /* GoogleService-Info.plist */,
 			);
 			path = HourTech;
+			sourceTree = "<group>";
+		};
+		7D8F8E5E8705183677264FD6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2F8A381B58AB61DA4ABA8621 /* Pods-HourTech.debug.xcconfig */,
+				1045C7646F2C7E0AF6B4B9C8 /* Pods-HourTech.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DC4AC1AC74234526FD94C065 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B970D4BE4DFAF82C114DF3F5 /* Pods_HourTech.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,9 +173,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7AA677D922250BDC00F6B596 /* Build configuration list for PBXNativeTarget "HourTech" */;
 			buildPhases = (
+				8EB9A84BB21FAFF12A721B87 /* [CP] Check Pods Manifest.lock */,
 				7AA677C322250BDB00F6B596 /* Sources */,
 				7AA677C422250BDB00F6B596 /* Frameworks */,
 				7AA677C522250BDB00F6B596 /* Resources */,
+				D086C5EB9A051A635781EB48 /* [CP] Embed Pods Frameworks */,
+				E4A8A3F46922A6D554552042 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -197,12 +228,90 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AA677D522250BDC00F6B596 /* LaunchScreen.storyboard in Resources */,
+				9019AC7E22349D6C00431BF8 /* GoogleService-Info.plist in Resources */,
 				7AA677D222250BDC00F6B596 /* Assets.xcassets in Resources */,
 				7AA677D022250BDB00F6B596 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8EB9A84BB21FAFF12A721B87 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HourTech-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D086C5EB9A051A635781EB48 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HourTech/Pods-HourTech-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HourTech/Pods-HourTech-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4A8A3F46922A6D554552042 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HourTech/Pods-HourTech-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HourTech/Pods-HourTech-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7AA677C322250BDB00F6B596 /* Sources */ = {
@@ -368,6 +477,7 @@
 		};
 		7AA677DA22250BDC00F6B596 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F8A381B58AB61DA4ABA8621 /* Pods-HourTech.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -389,6 +499,7 @@
 		};
 		7AA677DB22250BDC00F6B596 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1045C7646F2C7E0AF6B4B9C8 /* Pods-HourTech.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";

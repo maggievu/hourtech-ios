@@ -8,12 +8,17 @@
 
 import UIKit
 import CoreData
+import Firebase
 
 class ViewController: UIViewController {
 
     private var gradient: CAGradientLayer!
     let duration:Double = 1.0
     let delay:Double = 0
+    
+    let defaults = UserDefaults.standard
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    var techkyProfiles = [Techky_Profile]()
     
     @IBOutlet weak var searchTextField: UITextField!
     @IBOutlet weak var searchInstructionLabel: UILabel!
@@ -39,7 +44,9 @@ class ViewController: UIViewController {
             self.showFade(view: self.searchButtonLabel)
             self.showFade(view: self.searchIconLabel)
       }, completion: nil)
-
+        
+        retrieveProfile()
+        print("ViewDidLoad")
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -90,5 +97,59 @@ class ViewController: UIViewController {
         view.frame.size.height -= 350
     }
     
+    func retrieveProfile() {
+        let profileDB = Database.database().reference().child("profiles")
+        print("profileDB \(profileDB)")
+        
+        profileDB.observe(.value, with: { (snapshot) in
+            
+            print("snapshot:  \(snapshot)")
+            
+            for child in snapshot.children {
+//                print("Child:  \(child)")
+                let snap = child as! DataSnapshot
+                let dataDictionary = snap.value as! [String: Any]
+
+                let newProfile = Techky_Profile(context: self.context)
+
+                newProfile.firstname = dataDictionary["firstname"] as? String
+                newProfile.lastname = dataDictionary["lastname"] as? String
+                newProfile.profile_description = dataDictionary["description"] as? String
+                newProfile.skill = dataDictionary["skill"] as? String
+                newProfile.title = dataDictionary["title"] as? String
+
+                self.techkyProfiles.append(newProfile)
+            }
+            print("techkyProfiles: \(self.techkyProfiles)")
+            print("ChildrenCount: \(snapshot.childrenCount)")
+
+            self.deleteAllData("Techky_Profile")
+            
+            self.saveProfile()
+        })
+    }
+    
+    func saveProfile() {
+        do {
+            try context.save()
+        } catch {
+            print("Error saving context \(error)")
+        }
+    }
+    
+    func deleteAllData(_ entity:String) {
+        
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: entity)
+        let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
+        
+        let persistentContainer = (UIApplication.shared.delegate as! AppDelegate).persistentContainer
+        
+        do {
+            try persistentContainer.viewContext.execute(deleteRequest)
+        } catch let error as NSError {
+            print(error)
+        }
+        
+    }
 }
 
