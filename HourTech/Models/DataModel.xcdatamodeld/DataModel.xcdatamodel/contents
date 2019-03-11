@@ -4,9 +4,10 @@
         <attribute name="firstname" attributeType="String" syncable="YES"/>
         <attribute name="lastname" attributeType="String" syncable="YES"/>
         <attribute name="profile_description" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="skill" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="title" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Techky_Profile" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="Techky_Profile" positionX="-63" positionY="-18" width="128" height="120"/>
     </elements>
 </model>
