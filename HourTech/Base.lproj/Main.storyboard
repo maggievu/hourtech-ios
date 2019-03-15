@@ -34,7 +34,7 @@
                                                 <rect key="frame" x="16" y="78" width="340" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2jD-fz-eN7">
                                                 <rect key="frame" x="119.5" y="245.5" width="133" height="30"/>
@@ -82,6 +82,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0AC-PE-zA6">
                                         <rect key="frame" x="174.5" y="740" width="55" height="30"/>
                                         <state key="normal" title="Confirm"/>
+                                        <connections>
+                                            <action selector="confirmButtonTapped:" destination="JPR-m5-Vgw" eventType="touchUpInside" id="dfa-1R-tWy"/>
+                                        </connections>
                                     </button>
                                     <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JEj-3s-TmM">
                                         <rect key="frame" x="0.0" y="0.0" width="404" height="44"/>
@@ -133,11 +136,12 @@
                         <outlet property="navigationBarSignIn" destination="JEj-3s-TmM" id="MeW-o4-WdZ"/>
                         <outlet property="passwordTextField" destination="EiY-vc-mwh" id="Rik-St-dgD"/>
                         <segue destination="hA2-e9-Uch" kind="presentation" identifier="signup_signin_segue" modalPresentationStyle="overFullScreen" id="flM-VY-K8v"/>
+                        <segue destination="Cpz-9t-r1B" kind="show" identifier="search_segue" id="VTh-09-hwn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Wu-Te-P44" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1421.5999999999999" y="1563.8680659670167"/>
+            <point key="canvasLocation" x="1129" y="1718"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="GOY-L7-fz0">
@@ -163,13 +167,13 @@
                                                 <rect key="frame" x="16" y="78" width="340" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Re-enter Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="s3r-ic-2hW">
                                                 <rect key="frame" x="16" y="140" width="340" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ijt-AF-190">
                                                 <rect key="frame" x="177.5" y="202" width="17.5" height="14.5"/>
@@ -204,6 +208,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNq-ZZ-qbx">
                                         <rect key="frame" x="174.5" y="713" width="55" height="30"/>
                                         <state key="normal" title="Confirm"/>
+                                        <connections>
+                                            <action selector="confirmButtonTapped:" destination="hA2-e9-Uch" eventType="touchUpInside" id="Ux4-tk-Abd"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZlS-ZY-tIa">
                                         <rect key="frame" x="154" y="743" width="96" height="27"/>
@@ -258,11 +265,12 @@
                         <outlet property="navigationBarSignUp" destination="7KB-PP-QFl" id="uom-hE-GEt"/>
                         <outlet property="passwordTextField" destination="AG7-gd-mQF" id="grR-Dd-ItE"/>
                         <outlet property="rePasswordTextField" destination="s3r-ic-2hW" id="hug-zF-2ah"/>
+                        <segue destination="Cpz-9t-r1B" kind="show" identifier="search_segue" id="VYV-sy-2WP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vye-98-Mjw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2112.8000000000002" y="1563.8680659670167"/>
+            <point key="canvasLocation" x="2129" y="1718"/>
         </scene>
         <!--MainViewController-->
         <scene sceneID="tne-QT-ifu">
@@ -392,7 +400,7 @@
             <objects>
                 <viewController id="fh9-V3-eBu" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7E8-T8-DpM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="dqx-CR-Fvr"/>
@@ -568,11 +576,24 @@
         <!--Menu-->
         <scene sceneID="ezd-xf-P1b">
             <objects>
-                <viewController id="Kcq-Fv-7G7" sceneMemberID="viewController">
+                <viewController id="Kcq-Fv-7G7" customClass="SideMenuViewController" customModule="HourTech" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xJo-eG-pkE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HpN-1m-0j9">
+                                <rect key="frame" x="179.5" y="763" width="55" height="30"/>
+                                <state key="normal" title="Log Out"/>
+                                <connections>
+                                    <action selector="logoutButtonTapped:" destination="Kcq-Fv-7G7" eventType="touchUpInside" id="KBq-5Z-T5N"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="HpN-1m-0j9" firstAttribute="centerX" secondItem="xJo-eG-pkE" secondAttribute="centerX" id="i6h-eV-2NA"/>
+                            <constraint firstItem="HpN-1m-0j9" firstAttribute="bottom" secondItem="UgC-W3-Idg" secondAttribute="bottom" constant="-20" id="yog-Df-xKA"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="UgC-W3-Idg"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Menu" image="inactive-hamburger" selectedImage="hamburger" id="AhC-a1-6jv"/>
@@ -586,7 +607,7 @@
             <objects>
                 <viewController id="cHY-k5-XYI" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jg6-Kr-Hdb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="GlP-Eq-kJf"/>
@@ -819,6 +840,7 @@
         <image name="stars" width="89" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Z8g-uW-tfx"/>
+        <segue reference="VYV-sy-2WP"/>
+        <segue reference="flM-VY-K8v"/>
     </inferredMetricsTieBreakers>
 </document>
