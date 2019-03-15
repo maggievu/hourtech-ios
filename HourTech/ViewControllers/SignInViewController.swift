@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class SignInViewController: UIViewController {
 
@@ -21,6 +22,13 @@ class SignInViewController: UIViewController {
 
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if Auth.auth().currentUser != nil {
+            self.performSegue(withIdentifier: "search_segue", sender: self)
+        }
+    }
+    
     @IBAction func closeSignInTapped(_ sender: UIBarButtonItem) {
         dismiss(animated: true, completion: nil)
     }
@@ -29,5 +37,18 @@ class SignInViewController: UIViewController {
         performSegue(withIdentifier: "signup_signin_segue", sender: self)
     }
     
-
+    @IBAction func confirmButtonTapped(_ sender: Any) {
+        Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
+            if error != nil {
+                let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                
+                alertController.addAction(defaultAction)
+                self.present(alertController, animated: true, completion: nil)
+            } else {
+                self.performSegue(withIdentifier: "search_segue", sender: self)
+            }
+        }
+    }
+    
 }
