@@ -27,6 +27,9 @@
 		7AF1752B22275EE300478A7F /* TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF1752A22275EE300478A7F /* TextFieldDelegate.swift */; };
 		7AF1752D222760BF00478A7F /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF1752C222760BF00478A7F /* UIViewController.swift */; };
 		9019AC7E22349D6C00431BF8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9019AC7D22349D6B00431BF8 /* GoogleService-Info.plist */; };
+		90236EAB2247FF4C00B0C386 /* ChatSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90236EAA2247FF4C00B0C386 /* ChatSummary.swift */; };
+		9032F39D22443293007AD8EF /* MessageSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9032F39C22443293007AD8EF /* MessageSummaryViewController.swift */; };
+		9032F39F22443318007AD8EF /* MessageSummaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9032F39E22443318007AD8EF /* MessageSummaryTableViewCell.swift */; };
 		90C2B9D0222C69EC00576F67 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 90C2B9CE222C69EC00576F67 /* DataModel.xcdatamodeld */; };
 		90EFB0C0223BD35E00AC214D /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EFB0BF223BD35E00AC214D /* SideMenuViewController.swift */; };
 /* End PBXBuildFile section */
@@ -55,6 +58,9 @@
 		7AF1752A22275EE300478A7F /* TextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDelegate.swift; sourceTree = "<group>"; };
 		7AF1752C222760BF00478A7F /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		9019AC7D22349D6B00431BF8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		90236EAA2247FF4C00B0C386 /* ChatSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatSummary.swift; sourceTree = "<group>"; };
+		9032F39C22443293007AD8EF /* MessageSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageSummaryViewController.swift; sourceTree = "<group>"; };
+		9032F39E22443318007AD8EF /* MessageSummaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageSummaryTableViewCell.swift; sourceTree = "<group>"; };
 		90C2B9CF222C69EC00576F67 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		90EFB0BF223BD35E00AC214D /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		B970D4BE4DFAF82C114DF3F5 /* Pods_HourTech.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HourTech.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +87,7 @@
 				7AF175202226E47F00478A7F /* SearchResultsViewController.swift */,
 				7AF175262227176D00478A7F /* TechkyProfileViewController.swift */,
 				90EFB0BF223BD35E00AC214D /* SideMenuViewController.swift */,
+				9032F39C22443293007AD8EF /* MessageSummaryViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -93,6 +100,7 @@
 				7AF17524222705D500478A7F /* TechkyProfileTableViewCell.swift */,
 				7AAE335E222BC2980033C537 /* RoundedCornerUIButton.swift */,
 				7A11B954222D1E4D00B30C0B /* MoreRoundedUIButton.swift */,
+				9032F39E22443318007AD8EF /* MessageSummaryTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -102,6 +110,7 @@
 			children = (
 				90C2B9CE222C69EC00576F67 /* DataModel.xcdatamodeld */,
 				7AF175222226FD8300478A7F /* TechkyProfile.swift */,
+				90236EAA2247FF4C00B0C386 /* ChatSummary.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -326,13 +335,16 @@
 				51D8A41F222B7D0C004650FB /* RootTabBarController.swift in Sources */,
 				7AA677DD2225124F00F6B596 /* BackgroundCAGradientLayer.swift in Sources */,
 				7A3B27AA22260CAC0030879A /* SignUpViewController.swift in Sources */,
+				90236EAB2247FF4C00B0C386 /* ChatSummary.swift in Sources */,
 				7AF1752D222760BF00478A7F /* UIViewController.swift in Sources */,
+				9032F39D22443293007AD8EF /* MessageSummaryViewController.swift in Sources */,
 				90C2B9D0222C69EC00576F67 /* DataModel.xcdatamodeld in Sources */,
 				7AF17525222705D500478A7F /* TechkyProfileTableViewCell.swift in Sources */,
 				7AF175272227176D00478A7F /* TechkyProfileViewController.swift in Sources */,
 				90EFB0C0223BD35E00AC214D /* SideMenuViewController.swift in Sources */,
 				7AF1752922272EA700478A7F /* SignInViewController.swift in Sources */,
 				7AF175232226FD8300478A7F /* TechkyProfile.swift in Sources */,
+				9032F39F22443318007AD8EF /* MessageSummaryTableViewCell.swift in Sources */,
 				7AA677CB22250BDB00F6B596 /* AppDelegate.swift in Sources */,
 				7AF1752B22275EE300478A7F /* TextFieldDelegate.swift in Sources */,
 				7AF175212226E47F00478A7F /* SearchResultsViewController.swift in Sources */,
