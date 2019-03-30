@@ -117,7 +117,8 @@ class ViewController: UIViewController {
                 newProfile.profile_description = dataDictionary["description"] as? String
                 newProfile.skill = dataDictionary["skill"] as? String
                 newProfile.title = dataDictionary["title"] as? String
-
+                newProfile.userId = dataDictionary["userId"] as? String
+                
                 self.techkyProfiles.append(newProfile)
             }
             print("techkyProfiles: \(self.techkyProfiles)")

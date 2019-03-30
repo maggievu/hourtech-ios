@@ -68,45 +68,45 @@ class SearchResultsViewController: UIViewController {
         }
     }
     
-    func hardcodeProfile() {
-        
-        let newProfile1 = Techky_Profile(context: context)
-        newProfile1.firstname = "Maggie"
-        newProfile1.lastname = "Vu"
-        newProfile1.title = "Developer"
-        newProfile1.profile_description = "Highly motivated bla bla bla bla"
-        techkyProfiles.append(newProfile1)
-        
-        let newProfile2 = Techky_Profile(context: context)
-        newProfile2.firstname = "Diego"
-        newProfile2.lastname = "Rodrigues De Oliveira"
-        newProfile2.title = "Developer"
-        newProfile2.profile_description = "Skillful, hard-working. 2-year student at Langara. Available for design, presentation, logo design..."
-        techkyProfiles.append(newProfile2)
-        
-        let newProfile3 = Techky_Profile(context: context)
-        newProfile3.firstname = "Noppawit"
-        newProfile3.lastname = "Hansompob"
-        newProfile3.title = "Developer"
-        newProfile3.profile_description = "Skillful, hard-working. 2-year student at Langara. Available for design, presentation, logo design..."
-        techkyProfiles.append(newProfile3)
-        
-        let newProfile4 = Techky_Profile(context: context)
-        newProfile4.firstname = "Andra"
-        newProfile4.lastname = "Iskandar"
-        newProfile4.title = "Developer"
-        newProfile4.profile_description = "Skillful, hard-working. 2-year student at Langara. Available for design, presentation, logo design..."
-        techkyProfiles.append(newProfile4)
-        
-        let newProfile5 = Techky_Profile(context: context)
-        newProfile5.firstname = "Julia"
-        newProfile5.lastname = "Stanovsky"
-        newProfile5.title = "Designer"
-        newProfile5.profile_description = "Skillful, hard-working. 2-year student at Langara. Available for design, presentation, logo design..."
-        techkyProfiles.append(newProfile5)
-        
-        saveProfile()
-    }
+//    func hardcodeProfile() {
+//
+//        let newProfile1 = Techky_Profile(context: context)
+//        newProfile1.firstname = "Maggie"
+//        newProfile1.lastname = "Vu"
+//        newProfile1.title = "Developer"
+//        newProfile1.profile_description = "Highly motivated bla bla bla bla"
+//        techkyProfiles.append(newProfile1)
+//
+//        let newProfile2 = Techky_Profile(context: context)
+//        newProfile2.firstname = "Diego"
+//        newProfile2.lastname = "Rodrigues De Oliveira"
+//        newProfile2.title = "Developer"
+//        newProfile2.profile_description = "Skillful, hard-working. 2-year student at Langara. Available for design, presentation, logo design..."
+//        techkyProfiles.append(newProfile2)
+//
+//        let newProfile3 = Techky_Profile(context: context)
+//        newProfile3.firstname = "Noppawit"
+//        newProfile3.lastname = "Hansompob"
+//        newProfile3.title = "Developer"
+//        newProfile3.profile_description = "Skillful, hard-working. 2-year student at Langara. Available for design, presentation, logo design..."
+//        techkyProfiles.append(newProfile3)
+//
+//        let newProfile4 = Techky_Profile(context: context)
+//        newProfile4.firstname = "Andra"
+//        newProfile4.lastname = "Iskandar"
+//        newProfile4.title = "Developer"
+//        newProfile4.profile_description = "Skillful, hard-working. 2-year student at Langara. Available for design, presentation, logo design..."
+//        techkyProfiles.append(newProfile4)
+//
+//        let newProfile5 = Techky_Profile(context: context)
+//        newProfile5.firstname = "Julia"
+//        newProfile5.lastname = "Stanovsky"
+//        newProfile5.title = "Designer"
+//        newProfile5.profile_description = "Skillful, hard-working. 2-year student at Langara. Available for design, presentation, logo design..."
+//        techkyProfiles.append(newProfile5)
+//
+//        saveProfile()
+//    }
     
     func saveProfile() {
         do {

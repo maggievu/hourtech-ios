@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fwh-vD-wBP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fwh-vD-wBP">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -141,7 +141,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Wu-Te-P44" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1129" y="1718"/>
+            <point key="canvasLocation" x="987" y="1718"/>
         </scene>
         <!--Sign Up View Controller-->
         <scene sceneID="GOY-L7-fz0">
@@ -270,7 +270,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vye-98-Mjw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2129" y="1718"/>
+            <point key="canvasLocation" x="1800" y="1718"/>
         </scene>
         <!--MainViewController-->
         <scene sceneID="tne-QT-ifu">
@@ -343,14 +343,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B51-Ao-kdj">
-                                <rect key="frame" x="330" y="612" width="26" height="24"/>
+                                <rect key="frame" x="340" y="613" width="16" height="22"/>
                                 <state key="normal" image="search"/>
                                 <connections>
                                     <action selector="searchIconTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OQs-Lc-0yL"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ht-logo-white-mobile" translatesAutoresizingMaskIntoConstraints="NO" id="gV0-Ag-CFL">
-                                <rect key="frame" x="153" y="350" width="108" height="108"/>
+                                <rect key="frame" x="199" y="396" width="16" height="16"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -560,18 +560,99 @@
         <!--Messages-->
         <scene sceneID="rvL-ao-eLP">
             <objects>
-                <viewController id="gPj-qZ-AhE" sceneMemberID="viewController">
+                <viewController id="gPj-qZ-AhE" customClass="ChatSummaryViewController" customModule="HourTech" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ML0-b8-Bdj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bUN-lF-qUY">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChatSummaryCell" rowHeight="125" id="eGX-LF-hlw" customClass="MessageSummaryTableViewCell" customModule="HourTech" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="125"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eGX-LF-hlw" id="fZ5-Mr-pYl">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="124.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fullname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tBQ-Gb-Q5D">
+                                                    <rect key="frame" x="36" y="27" width="158" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhZ-ga-Hhz">
+                                                    <rect key="frame" x="36" y="64" width="158" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:41" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1xM-B5-xel">
+                                                    <rect key="frame" x="294" y="27" width="84" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="bhZ-ga-Hhz" firstAttribute="trailing" secondItem="tBQ-Gb-Q5D" secondAttribute="trailing" id="3Q3-CR-1LD"/>
+                                                <constraint firstItem="1xM-B5-xel" firstAttribute="top" secondItem="tBQ-Gb-Q5D" secondAttribute="top" id="8yo-VC-deP"/>
+                                                <constraint firstItem="1xM-B5-xel" firstAttribute="leading" relation="lessThanOrEqual" secondItem="tBQ-Gb-Q5D" secondAttribute="trailing" constant="100" id="NBz-uO-7fW"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="1xM-B5-xel" secondAttribute="trailing" constant="16" id="Zu4-9I-R2d"/>
+                                                <constraint firstItem="bhZ-ga-Hhz" firstAttribute="leading" secondItem="tBQ-Gb-Q5D" secondAttribute="leading" id="ayc-r9-oAA"/>
+                                                <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="tBQ-Gb-Q5D" secondAttribute="trailing" constant="200" id="hvu-so-Ox4"/>
+                                                <constraint firstItem="bhZ-ga-Hhz" firstAttribute="top" secondItem="tBQ-Gb-Q5D" secondAttribute="bottom" constant="16" id="iHk-VR-1TV"/>
+                                                <constraint firstItem="tBQ-Gb-Q5D" firstAttribute="top" secondItem="fZ5-Mr-pYl" secondAttribute="topMargin" constant="16" id="jzR-QN-vL4"/>
+                                                <constraint firstItem="tBQ-Gb-Q5D" firstAttribute="leading" secondItem="fZ5-Mr-pYl" secondAttribute="leadingMargin" constant="16" id="vgk-mG-fho"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="fullnameLabel" destination="tBQ-Gb-Q5D" id="4bK-4e-lci"/>
+                                            <outlet property="latestDatetimeLabel" destination="1xM-B5-xel" id="fRX-Re-VNg"/>
+                                            <outlet property="titleLabel" destination="bhZ-ga-Hhz" id="ho2-Ka-Dlc"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="gPj-qZ-AhE" id="hBp-LE-cbt"/>
+                                    <outlet property="delegate" destination="gPj-qZ-AhE" id="orG-Ct-oTL"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bUN-lF-qUY" firstAttribute="top" secondItem="r42-5G-QSu" secondAttribute="top" id="579-G1-bYX"/>
+                            <constraint firstItem="bUN-lF-qUY" firstAttribute="trailing" secondItem="r42-5G-QSu" secondAttribute="trailing" id="Ol9-jm-XZl"/>
+                            <constraint firstItem="bUN-lF-qUY" firstAttribute="leading" secondItem="r42-5G-QSu" secondAttribute="leading" id="ZGN-Yk-2SC"/>
+                            <constraint firstItem="bUN-lF-qUY" firstAttribute="bottom" secondItem="r42-5G-QSu" secondAttribute="bottom" id="kFS-ho-ouc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="r42-5G-QSu"/>
                     </view>
                     <navigationItem key="navigationItem" title="Messages" id="WMd-nD-znS"/>
+                    <connections>
+                        <outlet property="messageSummaryTableView" destination="bUN-lF-qUY" id="Pu0-kf-MLd"/>
+                        <segue destination="MXM-C7-0yF" kind="show" identifier="chatDetail_segue" id="O5C-su-enA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="imP-sP-w0p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4380" y="1524"/>
+            <point key="canvasLocation" x="4381" y="1718"/>
+        </scene>
+        <!--Chat Detail View Controller-->
+        <scene sceneID="ytr-ux-YI5">
+            <objects>
+                <viewController id="MXM-C7-0yF" customClass="ChatDetailViewController" customModule="HourTech" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fkl-5b-uHY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="gSl-Ff-Y0f"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s4D-vV-lAK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5117" y="1718"/>
         </scene>
         <!--Menu-->
         <scene sceneID="ezd-xf-P1b">
@@ -600,7 +681,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ohw-vY-Gml" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2876" y="2313"/>
+            <point key="canvasLocation" x="2641" y="2360"/>
         </scene>
         <!--Activity-->
         <scene sceneID="LxP-6b-kT0">
@@ -679,6 +760,9 @@
                                 <state key="normal" title="Contact">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="contactButtonTapped:" destination="nj5-LP-wIo" eventType="touchUpInside" id="ENQ-Ve-ijK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j5d-3r-0hV" customClass="RoundedCornerUIButton" customModule="HourTech" customModuleProvider="target">
                                 <rect key="frame" x="100" y="718" width="214" height="35"/>
@@ -727,6 +811,7 @@
                         <outlet property="descriptionLabel" destination="qbG-v3-qjw" id="bdz-zd-TQq"/>
                         <outlet property="nameLabel" destination="6Fv-Rv-zLh" id="gVy-tn-12j"/>
                         <outlet property="titleLabel" destination="YT7-KY-e0J" id="qel-or-1aR"/>
+                        <segue destination="MXM-C7-0yF" kind="show" identifier="chatDetail_segue" id="HKF-pG-GkE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QNX-f9-hV6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -820,7 +905,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZBE-LL-ArB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3629.5999999999999" y="1524.2878560719641"/>
+            <point key="canvasLocation" x="3629" y="1718"/>
         </scene>
     </scenes>
     <resources>
@@ -840,7 +925,8 @@
         <image name="stars" width="89" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="VYV-sy-2WP"/>
+        <segue reference="VTh-09-hwn"/>
+        <segue reference="HKF-pG-GkE"/>
         <segue reference="flM-VY-K8v"/>
     </inferredMetricsTieBreakers>
 </document>

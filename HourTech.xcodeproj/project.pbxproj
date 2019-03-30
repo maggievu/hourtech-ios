@@ -27,6 +27,11 @@
 		7AF1752B22275EE300478A7F /* TextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF1752A22275EE300478A7F /* TextFieldDelegate.swift */; };
 		7AF1752D222760BF00478A7F /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF1752C222760BF00478A7F /* UIViewController.swift */; };
 		9019AC7E22349D6C00431BF8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9019AC7D22349D6B00431BF8 /* GoogleService-Info.plist */; };
+		901CA5D0224C9AE800ADDD3D /* ChatSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901CA5CF224C9AE800ADDD3D /* ChatSummary.swift */; };
+		901CA5D2224C9C3700ADDD3D /* MessageSummaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901CA5D1224C9C3700ADDD3D /* MessageSummaryTableViewCell.swift */; };
+		901CA5D4224CAD8700ADDD3D /* ChatDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901CA5D3224CAD8700ADDD3D /* ChatDetailViewController.swift */; };
+		901CA5D6224CD4C300ADDD3D /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901CA5D5224CD4C300ADDD3D /* Message.swift */; };
+		902B1A0B2249B1F800A2C593 /* ChatSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902B1A0A2249B1F800A2C593 /* ChatSummaryViewController.swift */; };
 		90C2B9D0222C69EC00576F67 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 90C2B9CE222C69EC00576F67 /* DataModel.xcdatamodeld */; };
 		90EFB0C0223BD35E00AC214D /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90EFB0BF223BD35E00AC214D /* SideMenuViewController.swift */; };
 /* End PBXBuildFile section */
@@ -55,6 +60,11 @@
 		7AF1752A22275EE300478A7F /* TextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldDelegate.swift; sourceTree = "<group>"; };
 		7AF1752C222760BF00478A7F /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		9019AC7D22349D6B00431BF8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		901CA5CF224C9AE800ADDD3D /* ChatSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatSummary.swift; sourceTree = "<group>"; };
+		901CA5D1224C9C3700ADDD3D /* MessageSummaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageSummaryTableViewCell.swift; sourceTree = "<group>"; };
+		901CA5D3224CAD8700ADDD3D /* ChatDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailViewController.swift; sourceTree = "<group>"; };
+		901CA5D5224CD4C300ADDD3D /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		902B1A0A2249B1F800A2C593 /* ChatSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatSummaryViewController.swift; sourceTree = "<group>"; };
 		90C2B9CF222C69EC00576F67 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		90EFB0BF223BD35E00AC214D /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		B970D4BE4DFAF82C114DF3F5 /* Pods_HourTech.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HourTech.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +91,8 @@
 				7AF175202226E47F00478A7F /* SearchResultsViewController.swift */,
 				7AF175262227176D00478A7F /* TechkyProfileViewController.swift */,
 				90EFB0BF223BD35E00AC214D /* SideMenuViewController.swift */,
+				902B1A0A2249B1F800A2C593 /* ChatSummaryViewController.swift */,
+				901CA5D3224CAD8700ADDD3D /* ChatDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -93,6 +105,7 @@
 				7AF17524222705D500478A7F /* TechkyProfileTableViewCell.swift */,
 				7AAE335E222BC2980033C537 /* RoundedCornerUIButton.swift */,
 				7A11B954222D1E4D00B30C0B /* MoreRoundedUIButton.swift */,
+				901CA5D1224C9C3700ADDD3D /* MessageSummaryTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -102,6 +115,8 @@
 			children = (
 				90C2B9CE222C69EC00576F67 /* DataModel.xcdatamodeld */,
 				7AF175222226FD8300478A7F /* TechkyProfile.swift */,
+				901CA5CF224C9AE800ADDD3D /* ChatSummary.swift */,
+				901CA5D5224CD4C300ADDD3D /* Message.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -180,7 +195,6 @@
 				7AA677C422250BDB00F6B596 /* Frameworks */,
 				7AA677C522250BDB00F6B596 /* Resources */,
 				D086C5EB9A051A635781EB48 /* [CP] Embed Pods Frameworks */,
-				E4A8A3F46922A6D554552042 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -203,6 +217,7 @@
 				TargetAttributes = {
 					7AA677C622250BDB00F6B596 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -271,8 +286,9 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-HourTech/Pods-HourTech-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/MessageInputBar/MessageInputBar.framework",
+				"${BUILT_PRODUCTS_DIR}/MessageKit/MessageKit.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -281,36 +297,15 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageInputBar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HourTech/Pods-HourTech-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E4A8A3F46922A6D554552042 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-HourTech/Pods-HourTech-resources.sh",
-				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HourTech/Pods-HourTech-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -322,11 +317,13 @@
 			files = (
 				7AAE335B222B9E7B0033C537 /* UIView.swift in Sources */,
 				7AA677CD22250BDB00F6B596 /* ViewController.swift in Sources */,
+				901CA5D2224C9C3700ADDD3D /* MessageSummaryTableViewCell.swift in Sources */,
 				7A11B955222D1E4D00B30C0B /* MoreRoundedUIButton.swift in Sources */,
 				51D8A41F222B7D0C004650FB /* RootTabBarController.swift in Sources */,
 				7AA677DD2225124F00F6B596 /* BackgroundCAGradientLayer.swift in Sources */,
 				7A3B27AA22260CAC0030879A /* SignUpViewController.swift in Sources */,
 				7AF1752D222760BF00478A7F /* UIViewController.swift in Sources */,
+				901CA5D4224CAD8700ADDD3D /* ChatDetailViewController.swift in Sources */,
 				90C2B9D0222C69EC00576F67 /* DataModel.xcdatamodeld in Sources */,
 				7AF17525222705D500478A7F /* TechkyProfileTableViewCell.swift in Sources */,
 				7AF175272227176D00478A7F /* TechkyProfileViewController.swift in Sources */,
@@ -335,8 +332,11 @@
 				7AF175232226FD8300478A7F /* TechkyProfile.swift in Sources */,
 				7AA677CB22250BDB00F6B596 /* AppDelegate.swift in Sources */,
 				7AF1752B22275EE300478A7F /* TextFieldDelegate.swift in Sources */,
+				901CA5D6224CD4C300ADDD3D /* Message.swift in Sources */,
+				901CA5D0224C9AE800ADDD3D /* ChatSummary.swift in Sources */,
 				7AF175212226E47F00478A7F /* SearchResultsViewController.swift in Sources */,
 				7AAE335F222BC2980033C537 /* RoundedCornerUIButton.swift in Sources */,
+				902B1A0B2249B1F800A2C593 /* ChatSummaryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,7 +495,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hourtech.HourTech;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -517,7 +517,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hourtech.HourTech;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
