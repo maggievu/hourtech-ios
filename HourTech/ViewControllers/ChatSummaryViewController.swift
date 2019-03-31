@@ -14,6 +14,8 @@ class ChatSummaryViewController: UIViewController {
     var currentUserId: String = ""
     var chatSummary = [ChatSummary]()
     let databaseRef = Database.database().reference()
+    
+    var channelId: String = ""
 
     @IBOutlet weak var messageSummaryTableView: UITableView!
     
@@ -49,6 +51,7 @@ class ChatSummaryViewController: UIViewController {
         
         messageDB.observeSingleEvent(of: .value, with: { (snapshot) in
             print("key: \((snapshot.value as AnyObject).allKeys!)")
+            print("AllChatSnapshot: >> \(snapshot.value as AnyObject)")
             let allChatId = (snapshot.value as AnyObject).allKeys!
             for eachKey in allChatId as! [String] {
                 print("eachKey: \(eachKey)")
@@ -57,13 +60,26 @@ class ChatSummaryViewController: UIViewController {
                 
                 if saperateKey[0] == self.currentUserId || saperateKey[1] == self.currentUserId {
                     print("User match!!")
+                    let newChatSum = ChatSummary()
+                    
+                    self.channelId = eachKey
+                    messageDB.child(eachKey).observeSingleEvent(of: .value, with: { (Snapshot) in
+                        print("DateTimeSnapshot: \(Snapshot)")
+                        let channelDataDictionary = Snapshot.value as! [String: Any]
+                        print("DataDitionary: >> \(channelDataDictionary)")
+                        newChatSum.latestTime = channelDataDictionary["latestDateTime"] as! Double
+                        print("LatestTime: \(newChatSum.latestTime)")
+                        
+                    })
+                    
+                    
                     if self.currentUserId == saperateKey[0] {
                         self.databaseRef.child("users").child(String(saperateKey[1])).observe(.value, with: { (userSnapshot) in
                             //
                             let dataDictionary = userSnapshot.value as! [String: Any]
                             print("userSnapshot: \(userSnapshot)")
                             
-                            let newChatSum = ChatSummary()
+                            
                             
                             newChatSum.chatChannelId = saperateKey[0]+"_"+saperateKey[1]
                             
@@ -86,7 +102,7 @@ class ChatSummaryViewController: UIViewController {
                             let dataDictionary = userSnapshot.value as! [String: Any]
                             print("userSnapshot2: \(userSnapshot)")
                             
-                            let newChatSum = ChatSummary()
+//                            let newChatSum = ChatSummary()
                             
                             newChatSum.chatChannelId = saperateKey[0]+"_"+saperateKey[1]
                             

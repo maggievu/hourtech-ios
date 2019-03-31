@@ -343,14 +343,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B51-Ao-kdj">
-                                <rect key="frame" x="340" y="613" width="16" height="22"/>
+                                <rect key="frame" x="330" y="612" width="26" height="24.5"/>
                                 <state key="normal" image="search"/>
                                 <connections>
                                     <action selector="searchIconTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OQs-Lc-0yL"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ht-logo-white-mobile" translatesAutoresizingMaskIntoConstraints="NO" id="gV0-Ag-CFL">
-                                <rect key="frame" x="199" y="396" width="16" height="16"/>
+                                <rect key="frame" x="153" y="350" width="108.5" height="108.5"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -589,21 +589,21 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:41" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1xM-B5-xel">
-                                                    <rect key="frame" x="294" y="27" width="84" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <rect key="frame" x="366" y="71.5" width="28" height="13.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="11"/>
+                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="bhZ-ga-Hhz" firstAttribute="trailing" secondItem="tBQ-Gb-Q5D" secondAttribute="trailing" id="3Q3-CR-1LD"/>
-                                                <constraint firstItem="1xM-B5-xel" firstAttribute="top" secondItem="tBQ-Gb-Q5D" secondAttribute="top" id="8yo-VC-deP"/>
-                                                <constraint firstItem="1xM-B5-xel" firstAttribute="leading" relation="lessThanOrEqual" secondItem="tBQ-Gb-Q5D" secondAttribute="trailing" constant="100" id="NBz-uO-7fW"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="1xM-B5-xel" secondAttribute="trailing" constant="16" id="Zu4-9I-R2d"/>
+                                                <constraint firstItem="1xM-B5-xel" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bhZ-ga-Hhz" secondAttribute="trailing" constant="8" symbolic="YES" id="8fH-gE-5Zk"/>
+                                                <constraint firstItem="1xM-B5-xel" firstAttribute="trailing" secondItem="fZ5-Mr-pYl" secondAttribute="trailingMargin" id="MUV-fx-4Ka"/>
                                                 <constraint firstItem="bhZ-ga-Hhz" firstAttribute="leading" secondItem="tBQ-Gb-Q5D" secondAttribute="leading" id="ayc-r9-oAA"/>
                                                 <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="tBQ-Gb-Q5D" secondAttribute="trailing" constant="200" id="hvu-so-Ox4"/>
                                                 <constraint firstItem="bhZ-ga-Hhz" firstAttribute="top" secondItem="tBQ-Gb-Q5D" secondAttribute="bottom" constant="16" id="iHk-VR-1TV"/>
                                                 <constraint firstItem="tBQ-Gb-Q5D" firstAttribute="top" secondItem="fZ5-Mr-pYl" secondAttribute="topMargin" constant="16" id="jzR-QN-vL4"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="1xM-B5-xel" secondAttribute="bottom" constant="29" id="m8K-3x-MbO"/>
                                                 <constraint firstItem="tBQ-Gb-Q5D" firstAttribute="leading" secondItem="fZ5-Mr-pYl" secondAttribute="leadingMargin" constant="16" id="vgk-mG-fho"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -926,7 +926,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Oku-pu-WkP"/>
-        <segue reference="HKF-pG-GkE"/>
+        <segue reference="O5C-su-enA"/>
         <segue reference="Z8g-uW-tfx"/>
     </inferredMetricsTieBreakers>
 </document>

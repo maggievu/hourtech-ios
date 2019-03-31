@@ -15,5 +15,5 @@ class ChatSummary {
     var userId: String = ""
     var fullname: String = ""
     var title: String = ""
-    var latestTime: String = ""
+    var latestTime: Double = 0
 }

@@ -158,13 +158,18 @@ class ChatDetailViewController: MessagesViewController {
     
     func insertIntoFirebase(newMessage: Message) {
         print("newMessage: \(newMessage)")
+        let chatsRef = databaseRef.child("chats")
         
         let messageDictionary = [   "content": newMessage.text,
                                     "created": Int(NSDate().timeIntervalSince1970),
                                     "senderId": currentUserId,
                                     "senderName": currentUserName   ] as [String : Any]
-        let chatsRef = databaseRef.child("chats")
+        
         let channelRef = chatsRef.child(channelId)
+        
+        let timeDictionary = [ "latestDateTime": Int(NSDate().timeIntervalSince1970)] as [String : Any]
+        channelRef.updateChildValues(timeDictionary)
+        
         let threadRef = channelRef.child("thread")
         threadRef.childByAutoId().setValue(messageDictionary) {
             (error, reference) in

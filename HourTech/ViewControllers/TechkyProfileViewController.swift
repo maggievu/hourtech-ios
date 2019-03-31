@@ -58,7 +58,7 @@ class TechkyProfileViewController: UIViewController {
                 chatSummary.userId = profileUserId
                 chatSummary.fullname = profileName
                 chatSummary.title = (profile?.title!)!
-                chatSummary.latestTime = " "
+                chatSummary.latestTime = 0
                 
                 print("Sent_chatSummary: \(chatSummary)")
                 chatDetailVC.chatDetail = chatSummary
