@@ -10,7 +10,7 @@ import UIKit
 import CoreData
 import Firebase
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     private var gradient: CAGradientLayer!
     let duration:Double = 1.0
@@ -32,6 +32,8 @@ class ViewController: UIViewController {
         self.navigationController?.navigationBar.setValue(true, forKey: "hidesShadow")
         self.dismissKeyboardOnTap()
         
+        searchTextField.delegate = self
+        
         view.addBackground()
         
         UIView.animate(withDuration: duration, delay: delay, options: .curveEaseIn, animations: {
@@ -45,9 +47,20 @@ class ViewController: UIViewController {
             self.showFade(view: self.searchIconLabel)
       }, completion: nil)
         
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
+        
         retrieveProfile()
         print("ViewDidLoad")
     }
+    
+    deinit {
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
+    }
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
@@ -152,5 +165,27 @@ class ViewController: UIViewController {
         }
         
     }
+    
+    @objc func keyboardWillChange(notification: Notification) {
+        print("Keyboard will show: \(notification.name.rawValue)")
+        
+        guard let keyboardRect = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
+            return
+        }
+        
+        if notification.name == UIResponder.keyboardWillShowNotification || notification.name == UIResponder.keyboardWillChangeFrameNotification {
+            view.frame.origin.y = -keyboardRect.height
+        } else {
+            view.frame.origin.y = 0
+        }
+        
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        performSegue(withIdentifier: "search_segue", sender: self)
+        searchTextField.resignFirstResponder()
+        return true
+    }
+    
 }
 

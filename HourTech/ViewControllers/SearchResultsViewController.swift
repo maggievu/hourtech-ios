@@ -177,9 +177,9 @@ extension SearchResultsViewController: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         let request : NSFetchRequest<Techky_Profile> = Techky_Profile.fetchRequest()
         
-        request.predicate = NSPredicate(format: "title CONTAINS[cd] %@", searchBar.text!)
+        request.predicate = NSPredicate(format: "skill CONTAINS[cd] %@", searchBar.text!)
         
-        request.sortDescriptors = [NSSortDescriptor(key: "title", ascending: true)]
+        request.sortDescriptors = [NSSortDescriptor(key: "skill", ascending: true)]
         
         loadSearchResult(with: request)
         
@@ -198,9 +198,9 @@ extension SearchResultsViewController: UISearchBarDelegate {
             
             let request : NSFetchRequest<Techky_Profile> = Techky_Profile.fetchRequest()
             
-            request.predicate = NSPredicate(format: "title CONTAINS[cd] %@", searchBar.text!)
+            request.predicate = NSPredicate(format: "skill CONTAINS[cd] %@", searchBar.text!)
             
-            request.sortDescriptors = [NSSortDescriptor(key: "title", ascending: true)]
+            request.sortDescriptors = [NSSortDescriptor(key: "skill", ascending: true)]
             
             loadSearchResult(with: request)
             

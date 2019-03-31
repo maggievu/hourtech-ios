@@ -400,7 +400,7 @@
             <objects>
                 <viewController id="fh9-V3-eBu" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7E8-T8-DpM">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="dqx-CR-Fvr"/>
@@ -659,11 +659,11 @@
             <objects>
                 <viewController id="Kcq-Fv-7G7" customClass="SideMenuViewController" customModule="HourTech" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xJo-eG-pkE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HpN-1m-0j9">
-                                <rect key="frame" x="179.5" y="763" width="55" height="30"/>
+                                <rect key="frame" x="179.5" y="675" width="55" height="30"/>
                                 <state key="normal" title="Log Out"/>
                                 <connections>
                                     <action selector="logoutButtonTapped:" destination="Kcq-Fv-7G7" eventType="touchUpInside" id="KBq-5Z-T5N"/>
@@ -688,7 +688,7 @@
             <objects>
                 <viewController id="cHY-k5-XYI" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jg6-Kr-Hdb">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="GlP-Eq-kJf"/>
@@ -925,8 +925,8 @@
         <image name="stars" width="89" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="VTh-09-hwn"/>
+        <segue reference="Oku-pu-WkP"/>
         <segue reference="HKF-pG-GkE"/>
-        <segue reference="flM-VY-K8v"/>
+        <segue reference="Z8g-uW-tfx"/>
     </inferredMetricsTieBreakers>
 </document>
