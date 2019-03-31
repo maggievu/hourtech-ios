@@ -21,8 +21,13 @@ class TechkyProfileViewController: UIViewController {
     var currentUserId: String = ""
     var profileUserId: String = ""
     
+    var profileName: String = ""
+    
     var channelIdArray = [String]()
     var channelId: String = ""
+    var channelFlag: Bool = false
+    
+    let chatSummary: ChatSummary = ChatSummary()
     
     let databaseRef = Database.database().reference()
     
@@ -30,7 +35,8 @@ class TechkyProfileViewController: UIViewController {
         super.viewDidLoad()
         
         if let profile = profile {
-            nameLabel.text = profile.firstname! + " " + profile.lastname!
+            profileName = profile.firstname! + " " + profile.lastname!
+            nameLabel.text = profileName
             titleLabel.text = profile.title
             descriptionLabel.text = profile.profile_description
             profileUserId = profile.userId!
@@ -41,8 +47,26 @@ class TechkyProfileViewController: UIViewController {
         }
 
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "chatDetail_segue" {
+            if let chatDetailVC = segue.destination as? ChatDetailViewController{
+                
+                chatSummary.chatChannelId = channelId
+                chatSummary.firstname = (profile?.firstname!)!
+                chatSummary.lastname = (profile?.lastname!)!
+                chatSummary.userId = profileUserId
+                chatSummary.fullname = profileName
+                chatSummary.title = (profile?.title!)!
+                chatSummary.latestTime = " "
+                
+                print("Sent_chatSummary: \(chatSummary)")
+                chatDetailVC.chatDetail = chatSummary
+            }
+        }
+    }
+    
     @IBAction func contactButtonTapped(_ sender: Any) {
-//        print("profile:>>> \(String(describing: profile))")
         print("currentUserId: \(currentUserId)")
         print("profile_UserID: \(profileUserId)")
         
@@ -56,23 +80,49 @@ class TechkyProfileViewController: UIViewController {
         let possibleKey2 = profileUserId + "_" + currentUserId
         channelIdArray.append(possibleKey2)
         
-//        let chatsRef = databaseRef.child("chats").child(channelId).child("thread")
-        databaseRef.child("chats").observe(.value) { (chatChannelSnapshot) in
+        databaseRef.child("chats").observeSingleEvent(of: .value, with: { (chatChannelSnapshot) in
             for eachPossiblekey in self.channelIdArray {
                 if chatChannelSnapshot.hasChild(eachPossiblekey) {
                     self.channelId = eachPossiblekey
+                    self.channelFlag = true
+                    
                     break
                 } else {
                     self.channelId = possibleKey1
+                    self.channelFlag = false
                 }
             }
             print("channelId: \(self.channelId)");
             
-        }
+            if !self.channelFlag {
+                self.createNewChannel()
+            } else {
+                print("Perform Segue in ELSE")
+                self.performSegue(withIdentifier: "chatDetail_segue", sender: self)
+            }
+            
+        })
     }
     
     func createNewChannel() {
+        let chatRef = databaseRef.child("chats")
         
+        let channelItem = [
+            channelId : [
+                "thread": [
+                    "ChatID-00":[
+                        "content": "Hello there, Welcome to private chat.",
+                        "created": Int(NSDate().timeIntervalSince1970),
+                        "senderId": profileUserId,
+                        "senderName": profileName
+                    ]
+                ]
+            ]
+        ]
+        
+        chatRef.updateChildValues(channelItem)
+        print("Perform Segue After create Channel")
+        performSegue(withIdentifier: "chatDetail_segue", sender: self)
     }
     
 }

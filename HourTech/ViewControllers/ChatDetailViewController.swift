@@ -158,10 +158,7 @@ class ChatDetailViewController: MessagesViewController {
     
     func insertIntoFirebase(newMessage: Message) {
         print("newMessage: \(newMessage)")
-//        let newMessage = Message(
-//            member: currentMember,
-//            text: text,
-//            messageId: UUID().uuidString)
+        
         let messageDictionary = [   "content": newMessage.text,
                                     "created": Int(NSDate().timeIntervalSince1970),
                                     "senderId": currentUserId,
@@ -181,9 +178,7 @@ class ChatDetailViewController: MessagesViewController {
     
     func retrieveMessage() {
         let chatsRef = databaseRef.child("chats").child(channelId).child("thread")
-//        chatsRef.observe(.value) { (messageSnapshot) in
-////            print("messageSnapshot: \(messageSnapshot)")
-//        }
+        
         chatsRef.queryOrdered(byChild: "created").observe(.value) { (messageSnapshot) in
 //            print("messageSnapshot: \(messageSnapshot)")
             self.messages = []
@@ -203,8 +198,6 @@ class ChatDetailViewController: MessagesViewController {
                 
             }
         }
-//        messagesCollectionView.reloadData()
-        
     }
 
 }

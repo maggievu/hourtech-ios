@@ -55,19 +55,8 @@ class ChatSummaryViewController: UIViewController {
                 let saperateKey = eachKey.split(separator: "_")
                 print("saperateKey:\(saperateKey)")
                 
-                //                let testChat = ChatSummary()
-                //
-                //                testChat.firstname = String(saperateKey[0])
-                //                testChat.title = String(saperateKey[1])
-                //
-                //                self.chatSummary.append(testChat)
-                //
-                //                self.messageSummaryTableView.reloadData()
-                
                 if saperateKey[0] == self.currentUserId || saperateKey[1] == self.currentUserId {
                     print("User match!!")
-                    ////                    print("snapshotValue: \(snapshot.value)")
-                    //
                     if self.currentUserId == saperateKey[0] {
                         self.databaseRef.child("users").child(String(saperateKey[1])).observe(.value, with: { (userSnapshot) in
                             //
@@ -114,33 +103,6 @@ class ChatSummaryViewController: UIViewController {
                             
                         })
                     }
-                    
-                    //                    self.messageSummaryTableView.reloadData()
-                    
-                    //                    messageDB.child(eachKey).child("thread").observe(.value, with: { (messageSnap) in
-                    //
-                    //                        print("messageSnapInside: \(messageSnap.value as! [String: Any])")
-                    //
-                    //                        for chatMessage in messageSnap.children {
-                    //
-                    //                            let snap = chatMessage as! DataSnapshot
-                    //                            let dataDictionary = snap.value as! [String: Any]
-                    //
-                    //                            print("content: \(dataDictionary["content"] as! String)")
-                    //                            print("created: \(dataDictionary["created"] as! String)")
-                    //                            print("senderId: \(dataDictionary["senderId"] as! String)")
-                    //                            print("senderName: \(dataDictionary["senderName"] as! String)")
-                    //                            let newMsg = ChatSummary()
-                    //                            newMsg.content = dataDictionary["content"] as! String
-                    //                            newMsg.created = dataDictionary["created"] as! String
-                    //                            newMsg.senderId = dataDictionary["senderId"] as! String
-                    //                            newMsg.senderName = dataDictionary["senderName"] as! String
-                    //
-                    //                            self.chatSummary.append(newMsg)
-                    //                        }
-                    
-                    
-                    //                    })
                 } else {
                     print("No related Chat")
                 }
