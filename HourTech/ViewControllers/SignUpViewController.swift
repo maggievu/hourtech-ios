@@ -11,6 +11,8 @@ import Firebase
 
 class SignUpViewController: UIViewController {
 
+    @IBOutlet weak var firstNameTextField: UITextField!
+    @IBOutlet weak var lastNameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var rePasswordTextField: UITextField!
@@ -37,7 +39,7 @@ class SignUpViewController: UIViewController {
     
     @IBAction func confirmButtonTapped(_ sender: Any) {
         if passwordTextField.text != rePasswordTextField.text {
-            let alertController = UIAlertController(title: "Password Mis-Match", message: "Please re-type password", preferredStyle: .alert)
+            let alertController = UIAlertController(title: "Password Must Match", message: "Please re-type password", preferredStyle: .alert)
             let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
             alertController.addAction(defaultAction)
             
