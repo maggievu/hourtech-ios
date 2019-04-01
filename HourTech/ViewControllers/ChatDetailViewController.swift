@@ -75,7 +75,7 @@ class ChatDetailViewController: MessagesViewController {
         
             self.currentUserName = firstname + " " + lastname
             
-            self.currentMember = Member(name: self.currentUserName, color: .blue)
+            self.currentMember = Member(name: self.currentUserName, color: UIColor(red: 71/255.0, green: 143/255.0, blue: 204/255.0, alpha: 1))
             
             self.memberDictionary[self.currentUserId] = self.currentMember
             
@@ -100,7 +100,7 @@ class ChatDetailViewController: MessagesViewController {
             
             self.secondaryUserName = firstname + " " + lastname
             
-            self.secondMember = Member(name: self.secondaryUserName, color: .green)
+            self.secondMember = Member(name: self.secondaryUserName, color: .lightGray)
             
             self.memberDictionary[self.secondaryUserId] = self.secondMember
             
@@ -125,28 +125,28 @@ class ChatDetailViewController: MessagesViewController {
         
         let newMessage1 = Message(
             member: currentMember,
-            text: "Hello, young boy",
+            text: "Hello there",
             messageId: UUID().uuidString)
         
         messages.append(newMessage1)
         
         let newMessage2 = Message(
             member: secondMember,
-            text: "Good morning, Sir!. Do you think that it is a little bit early in the morning?",
+            text: "Good morning, how can I help you today?",
             messageId: UUID().uuidString)
         
         messages.append(newMessage2)
         
         let newMessage3 = Message(
             member: currentMember,
-            text: "Not at all! Boy!!",
+            text: "I'd like to deploy a React project on AWS",
             messageId: UUID().uuidString)
         
         messages.append(newMessage3)
         
         let newMessage4 = Message(
             member: currentMember,
-            text: "I have one job for you...",
+            text: "Sure. I can install HTTPS for your DNS too",
             messageId: UUID().uuidString)
         
         messages.append(newMessage4)
@@ -292,14 +292,12 @@ extension ChatDetailViewController: MessagesDisplayDelegate {
     func backgroundColor(for message: MessageType, at indexPath: IndexPath,
                          in messagesCollectionView: MessagesCollectionView) -> UIColor {
         
-        // 1 message box color
-        return isFromCurrentSender(message: message) ? UIColor(red: 0.3, green: 0.7, blue: 1, alpha: 1) : .lightGray
+        return isFromCurrentSender(message: message) ? UIColor(red: 71/255.0, green: 143/255.0, blue: 204/255.0, alpha: 1) : .lightGray
     }
     
     func shouldDisplayHeader(for message: MessageType, at indexPath: IndexPath,
                              in messagesCollectionView: MessagesCollectionView) -> Bool {
         
-        // 2
         return false
     }
     
@@ -308,7 +306,6 @@ extension ChatDetailViewController: MessagesDisplayDelegate {
         
         let corner: MessageStyle.TailCorner = isFromCurrentSender(message: message) ? .bottomRight : .bottomLeft
         
-        // 3
         return .bubbleTail(corner, .curved)
     }
 }
