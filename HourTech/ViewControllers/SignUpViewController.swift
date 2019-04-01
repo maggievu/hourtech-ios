@@ -18,6 +18,9 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var rePasswordTextField: UITextField!
     @IBOutlet weak var navigationBarSignUp: UINavigationBar!
     
+    var signUpUserId: String = ""
+    let databaseRef = Database.database().reference()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.dismissKeyboardOnTap()
@@ -38,26 +41,69 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func confirmButtonTapped(_ sender: Any) {
-        if passwordTextField.text != rePasswordTextField.text {
-            let alertController = UIAlertController(title: "Password Must Match", message: "Please re-type password", preferredStyle: .alert)
+        
+        if firstNameTextField.text!.isEmpty {
+            let alertController = UIAlertController(title: "Missing require field", message: "Please enter firstname", preferredStyle: .alert)
             let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
             alertController.addAction(defaultAction)
             
             self.present(alertController, animated: true, completion: nil)
-            
         } else {
-            Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
-                if error != nil {
-                    let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+            if lastNameTextField.text!.isEmpty {
+                let alertController = UIAlertController(title: "Missing require field", message: "Please enter last name", preferredStyle: .alert)
+                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                alertController.addAction(defaultAction)
+                
+                self.present(alertController, animated: true, completion: nil)
+            } else {
+                if emailTextField.text!.isEmpty {
+                    let alertController = UIAlertController(title: "Missing require field", message: "Please enter email address", preferredStyle: .alert)
                     let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                     alertController.addAction(defaultAction)
                     
                     self.present(alertController, animated: true, completion: nil)
                 } else {
-                    self.performSegue(withIdentifier: "search_segue", sender: self)
+                    if passwordTextField.text != rePasswordTextField.text {
+                        let alertController = UIAlertController(title: "Password Must Match", message: "Please re-type password", preferredStyle: .alert)
+                        let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                        alertController.addAction(defaultAction)
+                        
+                        self.present(alertController, animated: true, completion: nil)
+                        
+                    } else {
+                        Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
+                            if error != nil {
+                                let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)
+                                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                                alertController.addAction(defaultAction)
+                                
+                                self.present(alertController, animated: true, completion: nil)
+                            } else {
+                                if Auth.auth().currentUser != nil {
+                                    self.signUpUserId = Auth.auth().currentUser!.uid
+                                }
+                                print("signUpUserId: \(self.signUpUserId)")
+                                
+                                let usersRef = self.databaseRef.child("users")
+//
+                                let userItem = [
+                                    self.signUpUserId : [
+                                        "email": self.emailTextField.text!,
+                                        "firstname": self.firstNameTextField.text!,
+                                            "imgURL": " ",
+                                            "lastname": self.lastNameTextField.text!,
+                                            "title": "Client"   ] as [String : Any]
+                                    ]
+                                usersRef.updateChildValues(userItem)
+                                print("Perform Segue to search_segue")
+                                self.performSegue(withIdentifier: "search_segue", sender: self)
+                            }
+                        }
+                    }
                 }
             }
         }
+        
     }
     
 }

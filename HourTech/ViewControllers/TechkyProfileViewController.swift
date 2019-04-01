@@ -70,8 +70,20 @@ class TechkyProfileViewController: UIViewController {
         print("currentUserId: \(currentUserId)")
         print("profile_UserID: \(profileUserId)")
         
-        checkExistingChatChannel()
+        if Auth.auth().currentUser != nil {
+            checkExistingChatChannel()
+        } else {
+            let alertController = UIAlertController(title: "Required Signing In", message: "Please sign in to contact Techky", preferredStyle: .alert)
+//            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: { action in self.performSegue(withIdentifier: "signin_segue", sender: self) })
+            alertController.addAction(defaultAction)
+            
+            self.present(alertController, animated: true, completion: nil)
+            
+//            performSegue(withIdentifier: "signin_segue", sender: self)
+        }
         
+//        alert.addAction(UIAlertAction(title:"OK", style: .Default, handler:  { action in self.performSegueWithIdentifier("mySegueIdentifier", sender: self) }
     }
     
     func checkExistingChatChannel() {
