@@ -14,7 +14,6 @@ class SearchResultsViewController: UIViewController {
 //    var techkyProfiles = TechkyProfile.createProfile()
     var techkyProfiles = [Techky_Profile]()
 
-    @IBOutlet weak var additionalNavigationBackground: UILabel!
     @IBOutlet weak var searchTableView: UITableView!
     
     @IBOutlet weak var searchStatusLabel: UILabel!
@@ -167,7 +166,6 @@ extension SearchResultsViewController: UITableViewDelegate, UITableViewDataSourc
 //        print("didSelectRowAt: \(searchKeywordFromHome)")
         
         performSegue(withIdentifier: "techky_profile_segue", sender: self)
-        
     }
     
 }

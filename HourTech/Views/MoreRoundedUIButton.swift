@@ -11,7 +11,7 @@ import UIKit
 class MoreRoundedUIButton: UIButton {
 
     override func draw(_ rect: CGRect) {
-        self.layer.cornerRadius = 20
+        self.layer.cornerRadius = 15
         self.layer.masksToBounds = true
     }
     

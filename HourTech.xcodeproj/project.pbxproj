@@ -19,6 +19,7 @@
 		7AA677DD2225124F00F6B596 /* BackgroundCAGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA677DC2225124F00F6B596 /* BackgroundCAGradientLayer.swift */; };
 		7AAE335B222B9E7B0033C537 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAE335A222B9E7B0033C537 /* UIView.swift */; };
 		7AAE335F222BC2980033C537 /* RoundedCornerUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AAE335E222BC2980033C537 /* RoundedCornerUIButton.swift */; };
+		7AD0D4652254646F0068C730 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD0D4642254646F0068C730 /* ProfileViewController.swift */; };
 		7AF175212226E47F00478A7F /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF175202226E47F00478A7F /* SearchResultsViewController.swift */; };
 		7AF175232226FD8300478A7F /* TechkyProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF175222226FD8300478A7F /* TechkyProfile.swift */; };
 		7AF17525222705D500478A7F /* TechkyProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF17524222705D500478A7F /* TechkyProfileTableViewCell.swift */; };
@@ -52,6 +53,7 @@
 		7AA677DC2225124F00F6B596 /* BackgroundCAGradientLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundCAGradientLayer.swift; sourceTree = "<group>"; };
 		7AAE335A222B9E7B0033C537 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		7AAE335E222BC2980033C537 /* RoundedCornerUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornerUIButton.swift; sourceTree = "<group>"; };
+		7AD0D4642254646F0068C730 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		7AF175202226E47F00478A7F /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 		7AF175222226FD8300478A7F /* TechkyProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechkyProfile.swift; sourceTree = "<group>"; };
 		7AF17524222705D500478A7F /* TechkyProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechkyProfileTableViewCell.swift; sourceTree = "<group>"; };
@@ -85,14 +87,15 @@
 		7A3B27A522260C050030879A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				7AF1752822272EA700478A7F /* SignInViewController.swift */,
 				7AA677CC22250BDB00F6B596 /* ViewController.swift */,
+				7AF1752822272EA700478A7F /* SignInViewController.swift */,
 				7A3B27A922260CAC0030879A /* SignUpViewController.swift */,
 				7AF175202226E47F00478A7F /* SearchResultsViewController.swift */,
 				7AF175262227176D00478A7F /* TechkyProfileViewController.swift */,
-				90EFB0BF223BD35E00AC214D /* SideMenuViewController.swift */,
+				7AD0D4642254646F0068C730 /* ProfileViewController.swift */,
 				902B1A0A2249B1F800A2C593 /* ChatSummaryViewController.swift */,
 				901CA5D3224CAD8700ADDD3D /* ChatDetailViewController.swift */,
+				90EFB0BF223BD35E00AC214D /* SideMenuViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 				90EFB0C0223BD35E00AC214D /* SideMenuViewController.swift in Sources */,
 				7AF1752922272EA700478A7F /* SignInViewController.swift in Sources */,
 				7AF175232226FD8300478A7F /* TechkyProfile.swift in Sources */,
+				7AD0D4652254646F0068C730 /* ProfileViewController.swift in Sources */,
 				7AA677CB22250BDB00F6B596 /* AppDelegate.swift in Sources */,
 				7AF1752B22275EE300478A7F /* TextFieldDelegate.swift in Sources */,
 				901CA5D6224CD4C300ADDD3D /* Message.swift in Sources */,
