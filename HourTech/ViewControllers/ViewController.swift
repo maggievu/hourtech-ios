@@ -13,8 +13,6 @@ import Firebase
 class ViewController: UIViewController, UITextFieldDelegate {
 
     private var gradient: CAGradientLayer!
-    let duration:Double = 1.0
-    let delay:Double = 0
     
     let defaults = UserDefaults.standard
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
@@ -36,20 +34,20 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         view.addBackground()
         
-        UIView.animate(withDuration: duration, delay: delay, options: .curveEaseIn, animations: {
-            self.moveUp(view: self.logoImageView)
+        UIView.animate(withDuration: 2.0, delay: 0, options: .curveEaseIn, animations: {
+            self.moveUpAndScale(view: self.logoImageView)
         }, completion: nil)
         
-        UIView.animate(withDuration: duration, delay: delay, options: .curveEaseOut, animations: {
-            self.showFade(view: self.searchInstructionLabel)
-            self.showFade(view: self.searchTextField)
-            self.showFade(view: self.searchButtonLabel)
-            self.showFade(view: self.searchIconLabel)
+        UIView.animate(withDuration: 1.0, delay: 1.0, options: .curveEaseOut, animations: {
+            self.moveUp(view: self.searchInstructionLabel)
+            self.moveUp(view: self.searchTextField)
+            self.moveUp(view: self.searchButtonLabel)
+            self.moveUp(view: self.searchIconLabel)
       }, completion: nil)
         
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
         
         retrieveProfile()
         print("ViewDidLoad")
@@ -97,17 +95,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    func moveUp(view: UIView) {
-//        view.transform.translatedBy(x: 0, y: -350)
-        view.frame.size.height -= 350
-        view.transform = CGAffineTransform(translationX: 0.0, y: -200)
-//        view.transform = CGAffineTransform(scaleX: 0.55, y: 0.55)
+    func moveUpAndScale(view: UIView) {
+        view.transform = CGAffineTransform(translationX: 0.0, y: -300).concatenating((CGAffineTransform(scaleX: 0.7, y: 0.7)))
     }
     
-    func showFade(view: UIView){
-        view.alpha = 1.0
-        view.transform = CGAffineTransform(translationX: 0.0, y: -50)
-        view.frame.size.height -= 350
+    func moveUp(view: UIView){
+//        view.alpha = 1.0
+        view.transform = CGAffineTransform(translationX: 0.0, y: -180)
     }
     
     func retrieveProfile() {
@@ -168,17 +162,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     @objc func keyboardWillChange(notification: Notification) {
         print("Keyboard will show: \(notification.name.rawValue)")
-        
+
         guard let keyboardRect = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
             return
         }
-        
+
         if notification.name == UIResponder.keyboardWillShowNotification || notification.name == UIResponder.keyboardWillChangeFrameNotification {
             view.frame.origin.y = -keyboardRect.height
         } else {
             view.frame.origin.y = 0
         }
-        
+
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

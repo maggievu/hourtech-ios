@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 extension UIView {
-    func addBackground(imageName: String = "background", contentMode: UIView.ContentMode = .scaleToFill) {
+    func addBackground(imageName: String = "background", contentMode: UIView.ContentMode = .scaleAspectFill) {
         // setup the UIImageView
         let backgroundImageView = UIImageView(frame: UIScreen.main.bounds)
         backgroundImageView.image = UIImage(named: imageName)

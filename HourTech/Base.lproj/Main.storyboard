@@ -313,8 +313,8 @@
                                     <action selector="signUpTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OzU-6D-9tm"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a search keyword, like a skill you would like help with" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="Vz5-OJ-bWN">
-                                <rect key="frame" x="57" y="600" width="300" height="60"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a search keyword, like a skill you would like help with" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="Vz5-OJ-bWN">
+                                <rect key="frame" x="57" y="628" width="300" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="MYw-Ez-awA"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="cz9-jY-KSk"/>
@@ -323,7 +323,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQr-y0-n7v" customClass="RoundedCornerUIButton" customModule="HourTech" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQr-y0-n7v" customClass="RoundedCornerUIButton" customModule="HourTech" customModuleProvider="target">
                                 <rect key="frame" x="107" y="764" width="200" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -338,8 +338,8 @@
                                     <action selector="searchTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pJP-u2-GWH"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type to Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CkI-x8-59n">
-                                <rect key="frame" x="50" y="692" width="314" height="40"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type to Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CkI-x8-59n">
+                                <rect key="frame" x="50" y="704" width="314" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="1QY-Ie-cOz"/>
                                 </constraints>
@@ -361,20 +361,24 @@
                                     <action selector="signInTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Ds-CC-GiJ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B51-Ao-kdj">
-                                <rect key="frame" x="330" y="700" width="26" height="24.5"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B51-Ao-kdj">
+                                <rect key="frame" x="330" y="712" width="26" height="24.5"/>
                                 <state key="normal" image="search"/>
                                 <connections>
                                     <action selector="searchIconTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OQs-Lc-0yL"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ht-logo-white-mobile" translatesAutoresizingMaskIntoConstraints="NO" id="gV0-Ag-CFL">
-                                <rect key="frame" x="153" y="394" width="108.5" height="108.5"/>
+                                <rect key="frame" x="137" y="378" width="140" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="PKq-qy-ykY"/>
+                                    <constraint firstAttribute="width" constant="140" id="pgS-yB-Ver"/>
+                                </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.43529412150000002" green="0.4431372583" blue="0.47450980539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
                         <constraints>
-                            <constraint firstItem="kQr-y0-n7v" firstAttribute="top" secondItem="CkI-x8-59n" secondAttribute="bottom" constant="32" id="9T9-4r-1kK"/>
+                            <constraint firstItem="kQr-y0-n7v" firstAttribute="top" secondItem="CkI-x8-59n" secondAttribute="bottom" constant="20" id="9T9-4r-1kK"/>
                             <constraint firstItem="Vz5-OJ-bWN" firstAttribute="centerX" secondItem="CkI-x8-59n" secondAttribute="centerX" id="EDb-10-SvP"/>
                             <constraint firstItem="KS0-jG-lR3" firstAttribute="top" secondItem="kQr-y0-n7v" secondAttribute="bottom" constant="32" id="FL3-cN-nmR"/>
                             <constraint firstAttribute="bottom" secondItem="KS0-jG-lR3" secondAttribute="bottom" id="Mfm-YQ-OiF"/>
@@ -388,7 +392,7 @@
                             <constraint firstItem="KS0-jG-lR3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kCI-a4-hD4"/>
                             <constraint firstItem="gV0-Ag-CFL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m2Q-BX-t1q"/>
                             <constraint firstItem="t6c-QD-L0i" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-1" id="oJ1-pV-f5b"/>
-                            <constraint firstItem="CkI-x8-59n" firstAttribute="top" secondItem="Vz5-OJ-bWN" secondAttribute="bottom" constant="32" id="oyG-WW-b1V"/>
+                            <constraint firstItem="CkI-x8-59n" firstAttribute="top" secondItem="Vz5-OJ-bWN" secondAttribute="bottom" constant="16" id="oyG-WW-b1V"/>
                             <constraint firstItem="CkI-x8-59n" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Nce-nb-DrA" secondAttribute="leading" constant="50" id="qYg-4b-pXN"/>
                             <constraint firstItem="CkI-x8-59n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tDi-Dn-rJI"/>
                             <constraint firstItem="kQr-y0-n7v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yPE-fX-rS4"/>
