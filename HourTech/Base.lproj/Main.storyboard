@@ -362,7 +362,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B51-Ao-kdj">
-                                <rect key="frame" x="330" y="712" width="26" height="24.5"/>
+                                <rect key="frame" x="340" y="713" width="16" height="22"/>
                                 <state key="normal" image="search"/>
                                 <connections>
                                     <action selector="searchIconTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OQs-Lc-0yL"/>
