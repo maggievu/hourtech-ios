@@ -15,6 +15,7 @@ class TechkyProfileViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var profileImageView: UIImageView!
     
     var profile: Techky_Profile?
     
@@ -40,6 +41,7 @@ class TechkyProfileViewController: UIViewController {
             titleLabel.text = profile.title
             descriptionLabel.text = profile.profile_description
             profileUserId = profile.userId!
+            profileImageView.sd_setImage(with: URL(string: profile.profileURL!), placeholderImage: UIImage(named: "avatar"))
         }
         
         if Auth.auth().currentUser != nil {

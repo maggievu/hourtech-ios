@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import SDWebImage
 
 class TechkyProfileTableViewCell: UITableViewCell {
 
     @IBOutlet weak var techkyNameLabel: UILabel!
     @IBOutlet weak var techkyTitleLabel: UILabel!
     @IBOutlet weak var techkyDescriptionLabel: UILabel!
+    @IBOutlet weak var techkyImageView: UIImageView!
     
 //    override func awakeFromNib() {
 //        super.awakeFromNib()
@@ -37,6 +39,7 @@ class TechkyProfileTableViewCell: UITableViewCell {
         techkyNameLabel.text = profile.firstname! + " " + profile.lastname!
         techkyTitleLabel.text = profile.title
         techkyDescriptionLabel.text = profile.profile_description
+        techkyImageView.sd_setImage(with: URL(string: profile.profileURL!), placeholderImage: UIImage(named: "avatar"))
     }
 
 }

@@ -19,10 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PSJ-2A-ila">
-                                <rect key="frame" x="5" y="60" width="404" height="786"/>
+                                <rect key="frame" x="5" y="60" width="404" height="737"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C8Q-aa-nqQ">
-                                        <rect key="frame" x="16" y="144" width="372" height="498"/>
+                                        <rect key="frame" x="16" y="144" width="372" height="449"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="47Q-tq-IFs">
                                                 <rect key="frame" x="16" y="16" width="340" height="30"/>
@@ -80,7 +80,7 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0AC-PE-zA6">
-                                        <rect key="frame" x="174.5" y="740" width="55" height="30"/>
+                                        <rect key="frame" x="174.5" y="691" width="55" height="30"/>
                                         <state key="normal" title="Confirm"/>
                                         <connections>
                                             <action selector="confirmButtonTapped:" destination="JPR-m5-Vgw" eventType="touchUpInside" id="dfa-1R-tWy"/>
@@ -533,10 +533,12 @@
                             <constraint firstItem="dDi-A5-gtc" firstAttribute="top" secondItem="dbH-ZE-tHa" secondAttribute="bottom" constant="16" id="QSl-fw-u8L"/>
                             <constraint firstItem="xm1-a4-Oqr" firstAttribute="leading" secondItem="Lz7-Bp-KAI" secondAttribute="leading" id="U36-aF-bNu"/>
                             <constraint firstItem="ijs-Jb-ZPw" firstAttribute="top" secondItem="DDK-nB-yXz" secondAttribute="bottom" constant="16" id="ViG-sa-ngw"/>
+                            <constraint firstItem="dqx-CR-Fvr" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dDi-A5-gtc" secondAttribute="trailing" symbolic="YES" id="XJG-cp-A2f"/>
                             <constraint firstItem="aQt-Tb-TRH" firstAttribute="top" secondItem="dDi-A5-gtc" secondAttribute="bottom" constant="8" id="axg-zO-uiZ"/>
                             <constraint firstItem="aQt-Tb-TRH" firstAttribute="leading" secondItem="Lz7-Bp-KAI" secondAttribute="leading" id="b1N-Kt-zgB"/>
                             <constraint firstItem="Tu9-bZ-Ftk" firstAttribute="trailing" secondItem="5hm-Gn-hQa" secondAttribute="trailing" id="b3v-BI-e7a"/>
                             <constraint firstItem="6sJ-Qh-5IG" firstAttribute="leading" secondItem="Lz7-Bp-KAI" secondAttribute="leading" id="b6C-RN-ves"/>
+                            <constraint firstItem="dqx-CR-Fvr" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LLp-gk-z0J" secondAttribute="trailing" symbolic="YES" id="ciK-SF-X7i"/>
                             <constraint firstItem="DDK-nB-yXz" firstAttribute="leading" secondItem="Lz7-Bp-KAI" secondAttribute="leading" id="fVX-HB-27h"/>
                             <constraint firstItem="dbH-ZE-tHa" firstAttribute="leading" secondItem="Lz7-Bp-KAI" secondAttribute="leading" id="gjh-dd-bIG"/>
                             <constraint firstItem="Tu9-bZ-Ftk" firstAttribute="leading" secondItem="5hm-Gn-hQa" secondAttribute="leading" id="hkO-cR-jIp"/>
@@ -546,6 +548,7 @@
                             <constraint firstItem="6sQ-hf-NiG" firstAttribute="trailing" secondItem="5hm-Gn-hQa" secondAttribute="trailing" id="kqd-Ld-HNH"/>
                             <constraint firstItem="dqx-CR-Fvr" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Y6f-Qh-vpT" secondAttribute="trailing" symbolic="YES" id="mAv-Jz-qOp"/>
                             <constraint firstItem="dbH-ZE-tHa" firstAttribute="top" secondItem="LLp-gk-z0J" secondAttribute="bottom" constant="8" id="oAj-BD-w4s"/>
+                            <constraint firstItem="LLp-gk-z0J" firstAttribute="leading" secondItem="ijs-Jb-ZPw" secondAttribute="leading" id="qBk-3Q-cit"/>
                             <constraint firstItem="dqx-CR-Fvr" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ijs-Jb-ZPw" secondAttribute="trailing" symbolic="YES" id="rMR-LJ-Qgl"/>
                             <constraint firstItem="6sQ-hf-NiG" firstAttribute="leading" secondItem="Lz7-Bp-KAI" secondAttribute="leading" id="sY3-YS-4Se"/>
                             <constraint firstItem="6sJ-Qh-5IG" firstAttribute="top" secondItem="xm1-a4-Oqr" secondAttribute="bottom" constant="16" id="tV5-7Z-0bq"/>
@@ -667,6 +670,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="techkyDescriptionLabel" destination="tOi-J1-f1Z" id="LpD-jQ-G3r"/>
+                                            <outlet property="techkyImageView" destination="Y4O-Ll-0cf" id="dLq-IQ-ebx"/>
                                             <outlet property="techkyNameLabel" destination="KHI-sS-WSO" id="piH-k1-7IM"/>
                                             <outlet property="techkyTitleLabel" destination="daV-H4-BAF" id="Bmx-sr-Xdm"/>
                                         </connections>
@@ -976,6 +980,7 @@
                     <connections>
                         <outlet property="descriptionLabel" destination="qbG-v3-qjw" id="bdz-zd-TQq"/>
                         <outlet property="nameLabel" destination="6Fv-Rv-zLh" id="gVy-tn-12j"/>
+                        <outlet property="profileImageView" destination="doK-RD-Vay" id="Rwa-Kh-Nqc"/>
                         <outlet property="titleLabel" destination="YT7-KY-e0J" id="qel-or-1aR"/>
                         <segue destination="MXM-C7-0yF" kind="show" identifier="chatDetail_segue" id="HKF-pG-GkE"/>
                         <segue destination="JPR-m5-Vgw" kind="presentation" identifier="signin_segue" id="53G-Z0-9JH"/>
@@ -1092,6 +1097,6 @@
         <segue reference="Oku-pu-WkP"/>
         <segue reference="HKF-pG-GkE"/>
         <segue reference="Z8g-uW-tfx"/>
-        <segue reference="CCB-TD-MNq"/>
+        <segue reference="53G-Z0-9JH"/>
     </inferredMetricsTieBreakers>
 </document>

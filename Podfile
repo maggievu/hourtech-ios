@@ -11,5 +11,8 @@ target 'HourTech' do
     pod 'Firebase/Auth'
     pod 'Firebase/Database'
     pod 'MessageKit'
+    pod 'Firebase/Storage'
+    pod 'SDWebImage'
+    pod 'FirebaseUI/Storage'
 
 end

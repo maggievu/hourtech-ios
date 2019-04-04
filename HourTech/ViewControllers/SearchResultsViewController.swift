@@ -20,6 +20,7 @@ class SearchResultsViewController: UIViewController {
     
     @IBOutlet weak var searchBar: UISearchBar!
     
+    
     var searchKeywordFromHome = ""
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext

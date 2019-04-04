@@ -125,6 +125,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 newProfile.skill = dataDictionary["skill"] as? String
                 newProfile.title = dataDictionary["title"] as? String
                 newProfile.userId = dataDictionary["userId"] as? String
+                newProfile.profileURL = dataDictionary["profileURL"] as? String
                 
                 self.techkyProfiles.append(newProfile)
             }
