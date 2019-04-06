@@ -34,11 +34,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         view.addBackground()
         
-        UIView.animate(withDuration: 2.0, delay: 0, options: .curveEaseIn, animations: {
+        UIView.animate(withDuration: 0.6, delay: 0, options: .curveEaseOut, animations: {
             self.moveUpAndScale(view: self.logoImageView)
         }, completion: nil)
         
-        UIView.animate(withDuration: 1.0, delay: 1.0, options: .curveEaseOut, animations: {
+        UIView.animate(withDuration: 0.5, delay: 0.1, options: .curveEaseIn, animations: {
             self.moveUp(view: self.searchInstructionLabel)
             self.moveUp(view: self.searchTextField)
             self.moveUp(view: self.searchButtonLabel)
