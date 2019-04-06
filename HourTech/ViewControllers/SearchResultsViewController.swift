@@ -11,7 +11,6 @@ import CoreData
 
 class SearchResultsViewController: UIViewController {
     
-//    var techkyProfiles = TechkyProfile.createProfile()
     var techkyProfiles = [Techky_Profile]()
 
     @IBOutlet weak var searchTableView: UITableView!
@@ -35,19 +34,12 @@ class SearchResultsViewController: UIViewController {
         
         self.dismissKeyboardOnTap()
         searchStatusLabel.text = ""
-        
-//        searchTableView.rowHeight = UITableView.automaticDimension
-//        searchTableView.estimatedRowHeight = 500
-        
-        
-        //MARK - Uncomment hardcodeProfile for the first time run after finished come back and comment it again since it is hardcoding.
-//        hardcodeProfile()
+
         print("viewDidLoad: \(searchKeywordFromHome)")
         
         if let tabBarVC = self.tabBarController as? RootTabBarController {
             searchKeywordFromHome = tabBarVC.searchKeyword
             searchBar.text = searchKeywordFromHome
-//          print("InsideClosureDidLoad: \(searchKeywordFromHome)")
         }
         loadSearchResult()
     }
@@ -57,7 +49,6 @@ class SearchResultsViewController: UIViewController {
         self.navigationController?.navigationBar.isHidden = false
         
         searchBar(self.searchBar, textDidChange: searchKeywordFromHome)
-//        print("OutsideClosure: \(searchKeywordFromHome)")
         
     }
     
@@ -67,46 +58,6 @@ class SearchResultsViewController: UIViewController {
             dvc.profile = techkyProfiles[searchTableView.indexPathForSelectedRow!.row]
         }
     }
-    
-//    func hardcodeProfile() {
-//
-//        let newProfile1 = Techky_Profile(context: context)
-//        newProfile1.firstname = "Maggie"
-//        newProfile1.lastname = "Vu"
-//        newProfile1.title = "Developer"
-//        newProfile1.profile_description = "Highly motivated bla bla bla bla"
-//        techkyProfiles.append(newProfile1)
-//
-//        let newProfile2 = Techky_Profile(context: context)
-//        newProfile2.firstname = "Diego"
-//        newProfile2.lastname = "Rodrigues De Oliveira"
-//        newProfile2.title = "Developer"
-//        newProfile2.profile_description = "Skillful, hard-working. 2-year student at Langara. Available for design, presentation, logo design..."
-//        techkyProfiles.append(newProfile2)
-//
-//        let newProfile3 = Techky_Profile(context: context)
-//        newProfile3.firstname = "Noppawit"
-//        newProfile3.lastname = "Hansompob"
-//        newProfile3.title = "Developer"
-//        newProfile3.profile_description = "Skillful, hard-working. 2-year student at Langara. Available for design, presentation, logo design..."
-//        techkyProfiles.append(newProfile3)
-//
-//        let newProfile4 = Techky_Profile(context: context)
-//        newProfile4.firstname = "Andra"
-//        newProfile4.lastname = "Iskandar"
-//        newProfile4.title = "Developer"
-//        newProfile4.profile_description = "Skillful, hard-working. 2-year student at Langara. Available for design, presentation, logo design..."
-//        techkyProfiles.append(newProfile4)
-//
-//        let newProfile5 = Techky_Profile(context: context)
-//        newProfile5.firstname = "Julia"
-//        newProfile5.lastname = "Stanovsky"
-//        newProfile5.title = "Designer"
-//        newProfile5.profile_description = "Skillful, hard-working. 2-year student at Langara. Available for design, presentation, logo design..."
-//        techkyProfiles.append(newProfile5)
-//
-//        saveProfile()
-//    }
     
     func saveProfile() {
         do {
@@ -164,8 +115,6 @@ extension SearchResultsViewController: UITableViewDelegate, UITableViewDataSourc
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         searchKeywordFromHome = searchBar.text!
-//        print("didSelectRowAt: \(searchKeywordFromHome)")
-        
         performSegue(withIdentifier: "techky_profile_segue", sender: self)
     }
     

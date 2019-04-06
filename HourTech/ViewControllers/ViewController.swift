@@ -34,31 +34,20 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         view.addBackground()
         
-        UIView.animate(withDuration: 0.6, delay: 0, options: .curveEaseOut, animations: {
+        UIView.animate(withDuration: 1, delay: 0, options: .curveEaseOut, animations: {
             self.moveUpAndScale(view: self.logoImageView)
         }, completion: nil)
         
-        UIView.animate(withDuration: 0.5, delay: 0.1, options: .curveEaseIn, animations: {
+        UIView.animate(withDuration: 0.9, delay: 0.1, options: .curveEaseIn, animations: {
             self.moveUp(view: self.searchInstructionLabel)
             self.moveUp(view: self.searchTextField)
             self.moveUp(view: self.searchButtonLabel)
             self.moveUp(view: self.searchIconLabel)
       }, completion: nil)
         
-//        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: UIResponder.keyboardWillShowNotification, object: nil)
-//        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: UIResponder.keyboardWillHideNotification, object: nil)
-//        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange(notification:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
-        
         retrieveProfile()
         print("ViewDidLoad")
     }
-    
-    deinit {
-        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
-        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
-        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
-    }
-    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
@@ -100,7 +89,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     func moveUp(view: UIView){
-//        view.alpha = 1.0
         view.transform = CGAffineTransform(translationX: 0.0, y: -180)
     }
     
@@ -113,7 +101,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
             print("snapshot:  \(snapshot)")
             
             for child in snapshot.children {
-//                print("Child:  \(child)")
                 let snap = child as! DataSnapshot
                 let dataDictionary = snap.value as! [String: Any]
 
@@ -159,21 +146,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
             print(error)
         }
         
-    }
-    
-    @objc func keyboardWillChange(notification: Notification) {
-        print("Keyboard will show: \(notification.name.rawValue)")
-
-        guard let keyboardRect = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
-            return
-        }
-
-        if notification.name == UIResponder.keyboardWillShowNotification || notification.name == UIResponder.keyboardWillChangeFrameNotification {
-            view.frame.origin.y = -keyboardRect.height
-        } else {
-            view.frame.origin.y = 0
-        }
-
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

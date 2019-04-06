@@ -2,7 +2,7 @@
 //  MessageSummaryTableViewCell.swift
 //  HourTech
 //
-//  Created by Noppawit Hansompob on 27/3/2562 BE.
+//  Created by Noppawit Hansompob on 27/3/2019
 //  Copyright © 2562 Maggie VU. All rights reserved.
 //
 
@@ -15,13 +15,10 @@ class MessageSummaryTableViewCell: UITableViewCell {
     @IBOutlet weak var latestDatetimeLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        
-        // Configure the view for the selected state
     }
     
     override func prepareForReuse() {

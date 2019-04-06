@@ -54,7 +54,3 @@ class BackgroundCAGradientLayer: CAGradientLayer {
         self.type = type
     }
 }
-
-//extension CAGradientLayer {
-//
-//}

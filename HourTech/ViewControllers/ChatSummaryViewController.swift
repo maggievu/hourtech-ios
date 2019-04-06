@@ -25,24 +25,8 @@ class ChatSummaryViewController: UIViewController {
         if Auth.auth().currentUser != nil {
             currentUserId = Auth.auth().currentUser!.uid
         }
-        
-//        hardCodeSummary()
         getMessages()
         
-    }
-    
-    func hardCodeSummary() {
-        let chat1 = ChatSummary()
-        chat1.firstname = "Albert"
-        chat1.lastname = "Gilmore"
-        chat1.title = "Client"
-        chatSummary.append(chat1)
-        
-        let chat2 = ChatSummary()
-        chat2.firstname = "Samantra"
-        chat2.lastname = "Jackson"
-        chat2.title = "Designer"
-        chatSummary.append(chat2)
     }
     
     func getMessages() {
@@ -55,14 +39,15 @@ class ChatSummaryViewController: UIViewController {
             let allChatId = (snapshot.value as AnyObject).allKeys!
             for eachKey in allChatId as! [String] {
                 print("eachKey: \(eachKey)")
-                let saperateKey = eachKey.split(separator: "_")
-                print("saperateKey:\(saperateKey)")
+                let separateKey = eachKey.split(separator: "_")
+                print("separateKey:\(separateKey)")
                 
-                if saperateKey[0] == self.currentUserId || saperateKey[1] == self.currentUserId {
+                if separateKey[0] == self.currentUserId || separateKey[1] == self.currentUserId {
                     print("User match!!")
                     let newChatSum = ChatSummary()
                     
                     self.channelId = eachKey
+//                    GET Chat Summary <<<
                     messageDB.child(eachKey).observeSingleEvent(of: .value, with: { (Snapshot) in
                         print("DateTimeSnapshot: \(Snapshot)")
                         let channelDataDictionary = Snapshot.value as! [String: Any]
@@ -73,22 +58,19 @@ class ChatSummaryViewController: UIViewController {
                     })
                     
                     
-                    if self.currentUserId == saperateKey[0] {
-                        self.databaseRef.child("users").child(String(saperateKey[1])).observe(.value, with: { (userSnapshot) in
-                            //
+                    if self.currentUserId == separateKey[0] {
+                        self.databaseRef.child("users").child(String(separateKey[1])).observe(.value, with: { (userSnapshot) in
+                            
                             let dataDictionary = userSnapshot.value as! [String: Any]
                             print("userSnapshot: \(userSnapshot)")
                             
-                            
-                            
-                            newChatSum.chatChannelId = saperateKey[0]+"_"+saperateKey[1]
+                            newChatSum.chatChannelId = separateKey[0]+"_"+separateKey[1]
                             
                             newChatSum.firstname = dataDictionary["firstname"] as! String
                             
                             newChatSum.lastname = dataDictionary["lastname"] as! String
                             
                             newChatSum.title = dataDictionary["title"] as! String
-                            //                            newChatSum.userId = dataDictionary["userId"] as! String
                             
                             self.chatSummary.append(newChatSum)
                             
@@ -97,21 +79,18 @@ class ChatSummaryViewController: UIViewController {
                             
                         })
                     } else {
-                        self.databaseRef.child("users").child(String(saperateKey[0])).observe(.value, with: { (userSnapshot) in
+                        self.databaseRef.child("users").child(String(separateKey[0])).observe(.value, with: { (userSnapshot) in
                             
                             let dataDictionary = userSnapshot.value as! [String: Any]
                             print("userSnapshot2: \(userSnapshot)")
                             
-//                            let newChatSum = ChatSummary()
-                            
-                            newChatSum.chatChannelId = saperateKey[0]+"_"+saperateKey[1]
+                            newChatSum.chatChannelId = separateKey[0]+"_"+separateKey[1]
                             
                             newChatSum.firstname = dataDictionary["firstname"] as! String
                             
                             newChatSum.lastname = dataDictionary["lastname"] as! String
                             
                             newChatSum.title = dataDictionary["title"] as! String
-                            //                            newChatSum.imgURL= dataDictionary["imgURL"] as! String
                             
                             self.chatSummary.append(newChatSum)
                             

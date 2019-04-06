@@ -42,18 +42,12 @@ class ChatDetailViewController: MessagesViewController {
         }
         
         channelId = chatDetail!.chatChannelId
-        
-        
-//        member = Member(name: "bluemoon", color: .blue)
         createMember()
         
         messagesCollectionView.messagesDataSource = self
         messagesCollectionView.messagesLayoutDelegate = self
         messageInputBar.delegate = self
         messagesCollectionView.messagesDisplayDelegate = self
-        
-//        messagesCollectionView.reloadData()
-        
     }
     func createMember() {
         let memberIdArray = channelId.split(separator: "_")
@@ -82,7 +76,6 @@ class ChatDetailViewController: MessagesViewController {
             print("currentUserName: \(self.currentUserName)")
             print("memberDictionaryCurrentUser: \(String(describing: self.memberDictionary[self.currentUserId]))")
             if ( self.currentMember != nil && self.secondMember != nil ) {
-//                self.hardCodeMessage()
                 print("hardCode in CurrentMember")
                 self.retrieveMessage()
                 
@@ -107,7 +100,6 @@ class ChatDetailViewController: MessagesViewController {
             print("secondaryUserName: \(self.secondaryUserName)")
             print("memberDictionaryUser2: \(String(describing: self.memberDictionary[self.secondaryUserId]))")
             if ( self.currentMember != nil && self.secondMember != nil ) {
-//                self.hardCodeMessage()
                 print("hardCode in SecondMember")
                 self.retrieveMessage()
                 
@@ -115,45 +107,7 @@ class ChatDetailViewController: MessagesViewController {
             }
             
         })
-//        currentMember = Member(name: currentUserName, color: .blue)
-//        secondMember = Member(name: secondaryUserName, color: .green)
     }
-    
-    func hardCodeMessage(){
-//        member = Member(name: "bluemoon", color: .blue)
-//        member2 = Member(name: "greenboy", color: .green)
-        
-        let newMessage1 = Message(
-            member: currentMember,
-            text: "Hello there",
-            messageId: UUID().uuidString)
-        
-        messages.append(newMessage1)
-        
-        let newMessage2 = Message(
-            member: secondMember,
-            text: "Good morning, how can I help you today?",
-            messageId: UUID().uuidString)
-        
-        messages.append(newMessage2)
-        
-        let newMessage3 = Message(
-            member: currentMember,
-            text: "I'd like to deploy a React project on AWS",
-            messageId: UUID().uuidString)
-        
-        messages.append(newMessage3)
-        
-        let newMessage4 = Message(
-            member: currentMember,
-            text: "Sure. I can install HTTPS for your DNS too",
-            messageId: UUID().uuidString)
-        
-        messages.append(newMessage4)
-        
-        messagesCollectionView.reloadData()
-    }
-    
     //MARK: Insert into Firebase Database
     
     func insertIntoFirebase(newMessage: Message) {
@@ -185,7 +139,6 @@ class ChatDetailViewController: MessagesViewController {
         let chatsRef = databaseRef.child("chats").child(channelId).child("thread")
         
         chatsRef.queryOrdered(byChild: "created").observe(.value) { (messageSnapshot) in
-//            print("messageSnapshot: \(messageSnapshot)")
             self.messages = []
             for eachMessage in messageSnapshot.children {
                 print("eachChatMessage: \(eachMessage)")
@@ -229,15 +182,6 @@ extension ChatDetailViewController: MessagesDataSource {
 
         return 12
     }
-    
-//    func messageTopLabelAttributedText(
-//        for message: MessageType,
-//        at indexPath: IndexPath) -> NSAttributedString? {
-//
-//        return NSAttributedString(
-//            string: message.sender.displayName,
-//            attributes: [.font: UIFont.systemFont(ofSize: 12)])
-//    }
     func messageTopLabelAttributedText(for message: MessageType,
                                     at indexPath: IndexPath) -> NSAttributedString? {
         
@@ -321,8 +265,6 @@ extension ChatDetailViewController: MessageInputBarDelegate {
             messageId: UUID().uuidString)
         
         insertIntoFirebase(newMessage: newMessage)
-        
-//        messages.append(newMessage)
         inputBar.inputTextView.text = ""
         messagesCollectionView.reloadData()
         messagesCollectionView.scrollToBottom(animated: true)

@@ -76,16 +76,11 @@ class TechkyProfileViewController: UIViewController {
             checkExistingChatChannel()
         } else {
             let alertController = UIAlertController(title: "Required Signing In", message: "Please sign in to contact Techky", preferredStyle: .alert)
-//            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
             let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: { action in self.performSegue(withIdentifier: "signin_segue", sender: self) })
             alertController.addAction(defaultAction)
             
             self.present(alertController, animated: true, completion: nil)
-            
-//            performSegue(withIdentifier: "signin_segue", sender: self)
         }
-        
-//        alert.addAction(UIAlertAction(title:"OK", style: .Default, handler:  { action in self.performSegueWithIdentifier("mySegueIdentifier", sender: self) }
     }
     
     func checkExistingChatChannel() {
@@ -125,7 +120,7 @@ class TechkyProfileViewController: UIViewController {
             channelId : [
                 "thread": [
                     "ChatID-00":[
-                        "content": "Hello there, Welcome to private chat.",
+                        "content": "Hi there, How can I help you?",
                         "created": Int(NSDate().timeIntervalSince1970),
                         "senderId": profileUserId,
                         "senderName": profileName
@@ -135,6 +130,12 @@ class TechkyProfileViewController: UIViewController {
         ]
         
         chatRef.updateChildValues(channelItem)
+        
+        let channelRef = chatRef.child(channelId)
+        
+        let timeDictionary = [ "latestDateTime": Int(NSDate().timeIntervalSince1970)] as [String : Any]
+        channelRef.updateChildValues(timeDictionary)
+        
         print("Perform Segue After create Channel")
         performSegue(withIdentifier: "chatDetail_segue", sender: self)
     }
