@@ -19,10 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PSJ-2A-ila">
-                                <rect key="frame" x="5" y="60" width="404" height="737"/>
+                                <rect key="frame" x="5" y="60" width="404" height="786"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C8Q-aa-nqQ">
-                                        <rect key="frame" x="16" y="144" width="372" height="449"/>
+                                        <rect key="frame" x="16" y="144" width="372" height="498"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="47Q-tq-IFs">
                                                 <rect key="frame" x="16" y="16" width="340" height="30"/>
@@ -80,7 +80,7 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0AC-PE-zA6">
-                                        <rect key="frame" x="174.5" y="691" width="55" height="30"/>
+                                        <rect key="frame" x="174.5" y="740" width="55" height="30"/>
                                         <state key="normal" title="Confirm"/>
                                         <connections>
                                             <action selector="confirmButtonTapped:" destination="JPR-m5-Vgw" eventType="touchUpInside" id="dfa-1R-tWy"/>
@@ -362,7 +362,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B51-Ao-kdj">
-                                <rect key="frame" x="340" y="713" width="16" height="22"/>
+                                <rect key="frame" x="330" y="712" width="26" height="24.5"/>
                                 <state key="normal" image="search"/>
                                 <connections>
                                     <action selector="searchIconTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OQs-Lc-0yL"/>
@@ -575,6 +575,8 @@
                         <outlet property="lastNameEdit" destination="DDK-nB-yXz" id="zKa-Z5-8QO"/>
                         <outlet property="newPasswordEdit" destination="dbH-ZE-tHa" id="aPN-Yh-SeN"/>
                         <outlet property="oldPasswordEdit" destination="4CM-yy-CfL" id="gfg-v1-tCP"/>
+                        <outlet property="userImageView" destination="Lz7-Bp-KAI" id="aUd-kT-iva"/>
+                        <segue destination="JPR-m5-Vgw" kind="show" identifier="signin_segue" id="cac-d6-FL3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6m6-gM-JKM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1094,9 +1096,9 @@
         <image name="stars" width="89" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Oku-pu-WkP"/>
+        <segue reference="VTh-09-hwn"/>
         <segue reference="HKF-pG-GkE"/>
-        <segue reference="Z8g-uW-tfx"/>
-        <segue reference="53G-Z0-9JH"/>
+        <segue reference="flM-VY-K8v"/>
+        <segue reference="cac-d6-FL3"/>
     </inferredMetricsTieBreakers>
 </document>

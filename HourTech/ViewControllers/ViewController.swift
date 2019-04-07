@@ -26,6 +26,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print("self view center >> \(self.view.center)")
+        
         self.navigationController?.navigationBar.isHidden = true
         self.navigationController?.navigationBar.setValue(true, forKey: "hidesShadow")
         self.dismissKeyboardOnTap()
@@ -84,12 +87,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    func moveUpAndScale(view: UIView) {
-        view.transform = CGAffineTransform(translationX: 0.0, y: -300).concatenating((CGAffineTransform(scaleX: 0.7, y: 0.7)))
-    }
-    
     func moveUp(view: UIView){
-        view.transform = CGAffineTransform(translationX: 0.0, y: -180)
+        view.transform = CGAffineTransform(translationX: 0.0, y: -self.view.center.y + 150.0)
+    }
+    func moveUpAndScale(view: UIView) {
+        view.transform = CGAffineTransform(translationX: 0.0, y: -self.view.center.y + 40.0).concatenating((CGAffineTransform(scaleX: 0.7, y: 0.7)))
     }
     
     func retrieveProfile() {

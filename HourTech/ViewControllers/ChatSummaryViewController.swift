@@ -51,7 +51,7 @@ class ChatSummaryViewController: UIViewController {
                     messageDB.child(eachKey).observeSingleEvent(of: .value, with: { (Snapshot) in
                         print("DateTimeSnapshot: \(Snapshot)")
                         let channelDataDictionary = Snapshot.value as! [String: Any]
-                        print("DataDitionary: >> \(channelDataDictionary)")
+                        print("DataDictionary: >> \(channelDataDictionary)")
                         newChatSum.latestTime = channelDataDictionary["latestDateTime"] as! Double
                         print("LatestTime: \(newChatSum.latestTime)")
                         
