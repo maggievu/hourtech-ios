@@ -50,7 +50,7 @@ class ProfileViewController: UIViewController {
     
     @IBAction func editButtonTapped(_ sender: UIBarButtonItem) {
         // edit profile function goes here, can add Save button on the bottom of the screen as well
-        disableUITextfield(flag: !editFlag)
+//        disableUITextfield(flag: !editFlag)
     }
     
     func retrieveUserData() {

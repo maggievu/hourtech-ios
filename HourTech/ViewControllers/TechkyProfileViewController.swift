@@ -16,6 +16,7 @@ class TechkyProfileViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var reportButton: UIButton!
     
     var profile: Techky_Profile?
     
@@ -47,6 +48,9 @@ class TechkyProfileViewController: UIViewController {
         if Auth.auth().currentUser != nil {
             currentUserId = Auth.auth().currentUser!.uid
         }
+        
+        reportButton.layer.borderColor = UIColor(red: 19/255.0, green: 188/255.0, blue: 212/255.0, alpha: 1).cgColor
+        reportButton.layer.borderWidth = 2
 
     }
     
@@ -68,7 +72,7 @@ class TechkyProfileViewController: UIViewController {
         }
     }
     
-    @IBAction func contactButtonTapped(_ sender: Any) {
+    @IBAction func contactButtonTapped(_ sender: UIButton) {
         print("currentUserId: \(currentUserId)")
         print("profile_UserID: \(profileUserId)")
         

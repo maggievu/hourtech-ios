@@ -10,6 +10,40 @@
 		51D8A41F222B7D0C004650FB /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D8A41E222B7D0C004650FB /* RootTabBarController.swift */; };
 		6B6F6DCACD894B09EDAFEA2D /* Pods_HourTech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B970D4BE4DFAF82C114DF3F5 /* Pods_HourTech.framework */; };
 		7A11B955222D1E4D00B30C0B /* MoreRoundedUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A11B954222D1E4D00B30C0B /* MoreRoundedUIButton.swift */; };
+		7A2E2F3E225AEA4600CA0D08 /* Overpass-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E2F2E225AEA4500CA0D08 /* Overpass-Italic.ttf */; };
+		7A2E2F3F225AEA4600CA0D08 /* Overpass-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E2F2F225AEA4500CA0D08 /* Overpass-BoldItalic.ttf */; };
+		7A2E2F40225AEA4600CA0D08 /* Overpass-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E2F30225AEA4500CA0D08 /* Overpass-Light.ttf */; };
+		7A2E2F41225AEA4600CA0D08 /* Overpass-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E2F31225AEA4500CA0D08 /* Overpass-BlackItalic.ttf */; };
+		7A2E2F42225AEA4600CA0D08 /* Overpass-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E2F32225AEA4600CA0D08 /* Overpass-Black.ttf */; };
+		7A2E2F43225AEA4600CA0D08 /* Overpass-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E2F33225AEA4600CA0D08 /* Overpass-ExtraBoldItalic.ttf */; };
+		7A2E2F44225AEA4600CA0D08 /* Overpass-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E2F34225AEA4600CA0D08 /* Overpass-SemiBoldItalic.ttf */; };
+		7A2E2F45225AEA4600CA0D08 /* Overpass-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E2F35225AEA4600CA0D08 /* Overpass-ExtraLightItalic.ttf */; };
+		7A2E2F46225AEA4600CA0D08 /* Overpass-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E2F36225AEA4600CA0D08 /* Overpass-ThinItalic.ttf */; };
+		7A2E2F47225AEA4600CA0D08 /* Overpass-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E2F37225AEA4600CA0D08 /* Overpass-ExtraBold.ttf */; };
+		7A2E2F48225AEA4600CA0D08 /* Overpass-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E2F38225AEA4600CA0D08 /* Overpass-ExtraLight.ttf */; };
+		7A2E2F49225AEA4600CA0D08 /* Overpass-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E2F39225AEA4600CA0D08 /* Overpass-Bold.ttf */; };
+		7A2E2F4A225AEA4600CA0D08 /* Overpass-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E2F3A225AEA4600CA0D08 /* Overpass-Regular.ttf */; };
+		7A2E2F4B225AEA4600CA0D08 /* Overpass-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E2F3B225AEA4600CA0D08 /* Overpass-Thin.ttf */; };
+		7A2E2F4C225AEA4600CA0D08 /* Overpass-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E2F3C225AEA4600CA0D08 /* Overpass-LightItalic.ttf */; };
+		7A2E2F4D225AEA4600CA0D08 /* Overpass-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E2F3D225AEA4600CA0D08 /* Overpass-SemiBold.ttf */; };
+		7A2E2F60225AEA5600CA0D08 /* Raleway-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E2F4E225AEA5400CA0D08 /* Raleway-ExtraLightItalic.ttf */; };
+		7A2E2F61225AEA5600CA0D08 /* Raleway-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E2F4F225AEA5400CA0D08 /* Raleway-BoldItalic.ttf */; };
+		7A2E2F62225AEA5600CA0D08 /* Raleway-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E2F50225AEA5400CA0D08 /* Raleway-LightItalic.ttf */; };
+		7A2E2F63225AEA5600CA0D08 /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E2F51225AEA5400CA0D08 /* Raleway-Light.ttf */; };
+		7A2E2F64225AEA5600CA0D08 /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E2F52225AEA5400CA0D08 /* Raleway-Bold.ttf */; };
+		7A2E2F65225AEA5600CA0D08 /* Raleway-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E2F53225AEA5400CA0D08 /* Raleway-ExtraLight.ttf */; };
+		7A2E2F66225AEA5600CA0D08 /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E2F54225AEA5500CA0D08 /* Raleway-Medium.ttf */; };
+		7A2E2F67225AEA5600CA0D08 /* Raleway-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E2F55225AEA5500CA0D08 /* Raleway-ExtraBold.ttf */; };
+		7A2E2F68225AEA5600CA0D08 /* Raleway-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E2F56225AEA5500CA0D08 /* Raleway-ExtraBoldItalic.ttf */; };
+		7A2E2F69225AEA5600CA0D08 /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E2F57225AEA5500CA0D08 /* Raleway-SemiBold.ttf */; };
+		7A2E2F6A225AEA5600CA0D08 /* Raleway-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E2F58225AEA5500CA0D08 /* Raleway-Thin.ttf */; };
+		7A2E2F6B225AEA5600CA0D08 /* Raleway-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E2F59225AEA5500CA0D08 /* Raleway-BlackItalic.ttf */; };
+		7A2E2F6C225AEA5600CA0D08 /* Raleway-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E2F5A225AEA5500CA0D08 /* Raleway-Italic.ttf */; };
+		7A2E2F6D225AEA5600CA0D08 /* Raleway-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E2F5B225AEA5500CA0D08 /* Raleway-SemiBoldItalic.ttf */; };
+		7A2E2F6E225AEA5600CA0D08 /* Raleway-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E2F5C225AEA5500CA0D08 /* Raleway-MediumItalic.ttf */; };
+		7A2E2F6F225AEA5600CA0D08 /* Raleway-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E2F5D225AEA5500CA0D08 /* Raleway-ThinItalic.ttf */; };
+		7A2E2F70225AEA5600CA0D08 /* Raleway-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E2F5E225AEA5500CA0D08 /* Raleway-Black.ttf */; };
+		7A2E2F71225AEA5600CA0D08 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E2F5F225AEA5600CA0D08 /* Raleway-Regular.ttf */; };
 		7A3B27AA22260CAC0030879A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3B27A922260CAC0030879A /* SignUpViewController.swift */; };
 		7AA677CB22250BDB00F6B596 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA677CA22250BDB00F6B596 /* AppDelegate.swift */; };
 		7AA677CD22250BDB00F6B596 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA677CC22250BDB00F6B596 /* ViewController.swift */; };
@@ -42,6 +76,40 @@
 		2F8A381B58AB61DA4ABA8621 /* Pods-HourTech.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HourTech.debug.xcconfig"; path = "Target Support Files/Pods-HourTech/Pods-HourTech.debug.xcconfig"; sourceTree = "<group>"; };
 		51D8A41E222B7D0C004650FB /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
 		7A11B954222D1E4D00B30C0B /* MoreRoundedUIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreRoundedUIButton.swift; sourceTree = "<group>"; };
+		7A2E2F2E225AEA4500CA0D08 /* Overpass-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-Italic.ttf"; sourceTree = "<group>"; };
+		7A2E2F2F225AEA4500CA0D08 /* Overpass-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-BoldItalic.ttf"; sourceTree = "<group>"; };
+		7A2E2F30225AEA4500CA0D08 /* Overpass-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-Light.ttf"; sourceTree = "<group>"; };
+		7A2E2F31225AEA4500CA0D08 /* Overpass-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-BlackItalic.ttf"; sourceTree = "<group>"; };
+		7A2E2F32225AEA4600CA0D08 /* Overpass-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-Black.ttf"; sourceTree = "<group>"; };
+		7A2E2F33225AEA4600CA0D08 /* Overpass-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		7A2E2F34225AEA4600CA0D08 /* Overpass-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		7A2E2F35225AEA4600CA0D08 /* Overpass-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		7A2E2F36225AEA4600CA0D08 /* Overpass-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-ThinItalic.ttf"; sourceTree = "<group>"; };
+		7A2E2F37225AEA4600CA0D08 /* Overpass-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-ExtraBold.ttf"; sourceTree = "<group>"; };
+		7A2E2F38225AEA4600CA0D08 /* Overpass-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-ExtraLight.ttf"; sourceTree = "<group>"; };
+		7A2E2F39225AEA4600CA0D08 /* Overpass-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-Bold.ttf"; sourceTree = "<group>"; };
+		7A2E2F3A225AEA4600CA0D08 /* Overpass-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-Regular.ttf"; sourceTree = "<group>"; };
+		7A2E2F3B225AEA4600CA0D08 /* Overpass-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-Thin.ttf"; sourceTree = "<group>"; };
+		7A2E2F3C225AEA4600CA0D08 /* Overpass-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-LightItalic.ttf"; sourceTree = "<group>"; };
+		7A2E2F3D225AEA4600CA0D08 /* Overpass-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Overpass-SemiBold.ttf"; sourceTree = "<group>"; };
+		7A2E2F4E225AEA5400CA0D08 /* Raleway-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		7A2E2F4F225AEA5400CA0D08 /* Raleway-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-BoldItalic.ttf"; sourceTree = "<group>"; };
+		7A2E2F50225AEA5400CA0D08 /* Raleway-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-LightItalic.ttf"; sourceTree = "<group>"; };
+		7A2E2F51225AEA5400CA0D08 /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Light.ttf"; sourceTree = "<group>"; };
+		7A2E2F52225AEA5400CA0D08 /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
+		7A2E2F53225AEA5400CA0D08 /* Raleway-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraLight.ttf"; sourceTree = "<group>"; };
+		7A2E2F54225AEA5500CA0D08 /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Medium.ttf"; sourceTree = "<group>"; };
+		7A2E2F55225AEA5500CA0D08 /* Raleway-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraBold.ttf"; sourceTree = "<group>"; };
+		7A2E2F56225AEA5500CA0D08 /* Raleway-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		7A2E2F57225AEA5500CA0D08 /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
+		7A2E2F58225AEA5500CA0D08 /* Raleway-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Thin.ttf"; sourceTree = "<group>"; };
+		7A2E2F59225AEA5500CA0D08 /* Raleway-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-BlackItalic.ttf"; sourceTree = "<group>"; };
+		7A2E2F5A225AEA5500CA0D08 /* Raleway-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Italic.ttf"; sourceTree = "<group>"; };
+		7A2E2F5B225AEA5500CA0D08 /* Raleway-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		7A2E2F5C225AEA5500CA0D08 /* Raleway-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-MediumItalic.ttf"; sourceTree = "<group>"; };
+		7A2E2F5D225AEA5500CA0D08 /* Raleway-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ThinItalic.ttf"; sourceTree = "<group>"; };
+		7A2E2F5E225AEA5500CA0D08 /* Raleway-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Black.ttf"; sourceTree = "<group>"; };
+		7A2E2F5F225AEA5600CA0D08 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
 		7A3B27A922260CAC0030879A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		7AA677C722250BDB00F6B596 /* HourTech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HourTech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AA677CA22250BDB00F6B596 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +152,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A2E2F2D225AE9DC00CA0D08 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7A2E2F5E225AEA5500CA0D08 /* Raleway-Black.ttf */,
+				7A2E2F59225AEA5500CA0D08 /* Raleway-BlackItalic.ttf */,
+				7A2E2F52225AEA5400CA0D08 /* Raleway-Bold.ttf */,
+				7A2E2F4F225AEA5400CA0D08 /* Raleway-BoldItalic.ttf */,
+				7A2E2F55225AEA5500CA0D08 /* Raleway-ExtraBold.ttf */,
+				7A2E2F56225AEA5500CA0D08 /* Raleway-ExtraBoldItalic.ttf */,
+				7A2E2F53225AEA5400CA0D08 /* Raleway-ExtraLight.ttf */,
+				7A2E2F4E225AEA5400CA0D08 /* Raleway-ExtraLightItalic.ttf */,
+				7A2E2F5A225AEA5500CA0D08 /* Raleway-Italic.ttf */,
+				7A2E2F51225AEA5400CA0D08 /* Raleway-Light.ttf */,
+				7A2E2F50225AEA5400CA0D08 /* Raleway-LightItalic.ttf */,
+				7A2E2F54225AEA5500CA0D08 /* Raleway-Medium.ttf */,
+				7A2E2F5C225AEA5500CA0D08 /* Raleway-MediumItalic.ttf */,
+				7A2E2F5F225AEA5600CA0D08 /* Raleway-Regular.ttf */,
+				7A2E2F57225AEA5500CA0D08 /* Raleway-SemiBold.ttf */,
+				7A2E2F5B225AEA5500CA0D08 /* Raleway-SemiBoldItalic.ttf */,
+				7A2E2F58225AEA5500CA0D08 /* Raleway-Thin.ttf */,
+				7A2E2F5D225AEA5500CA0D08 /* Raleway-ThinItalic.ttf */,
+				7A2E2F32225AEA4600CA0D08 /* Overpass-Black.ttf */,
+				7A2E2F31225AEA4500CA0D08 /* Overpass-BlackItalic.ttf */,
+				7A2E2F39225AEA4600CA0D08 /* Overpass-Bold.ttf */,
+				7A2E2F2F225AEA4500CA0D08 /* Overpass-BoldItalic.ttf */,
+				7A2E2F37225AEA4600CA0D08 /* Overpass-ExtraBold.ttf */,
+				7A2E2F33225AEA4600CA0D08 /* Overpass-ExtraBoldItalic.ttf */,
+				7A2E2F38225AEA4600CA0D08 /* Overpass-ExtraLight.ttf */,
+				7A2E2F35225AEA4600CA0D08 /* Overpass-ExtraLightItalic.ttf */,
+				7A2E2F2E225AEA4500CA0D08 /* Overpass-Italic.ttf */,
+				7A2E2F30225AEA4500CA0D08 /* Overpass-Light.ttf */,
+				7A2E2F3C225AEA4600CA0D08 /* Overpass-LightItalic.ttf */,
+				7A2E2F3A225AEA4600CA0D08 /* Overpass-Regular.ttf */,
+				7A2E2F3D225AEA4600CA0D08 /* Overpass-SemiBold.ttf */,
+				7A2E2F34225AEA4600CA0D08 /* Overpass-SemiBoldItalic.ttf */,
+				7A2E2F3B225AEA4600CA0D08 /* Overpass-Thin.ttf */,
+				7A2E2F36225AEA4600CA0D08 /* Overpass-ThinItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		7A3B27A522260C050030879A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +264,7 @@
 		7AA677C922250BDB00F6B596 /* HourTech */ = {
 			isa = PBXGroup;
 			children = (
+				7A2E2F2D225AE9DC00CA0D08 /* Fonts */,
 				7A3B27A822260C3C0030879A /* Extensions */,
 				7A3B27A722260C1D0030879A /* Models */,
 				7A3B27A622260C180030879A /* Views */,
@@ -247,10 +357,44 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A2E2F4A225AEA4600CA0D08 /* Overpass-Regular.ttf in Resources */,
+				7A2E2F70225AEA5600CA0D08 /* Raleway-Black.ttf in Resources */,
+				7A2E2F40225AEA4600CA0D08 /* Overpass-Light.ttf in Resources */,
+				7A2E2F6E225AEA5600CA0D08 /* Raleway-MediumItalic.ttf in Resources */,
+				7A2E2F3E225AEA4600CA0D08 /* Overpass-Italic.ttf in Resources */,
+				7A2E2F6D225AEA5600CA0D08 /* Raleway-SemiBoldItalic.ttf in Resources */,
+				7A2E2F6F225AEA5600CA0D08 /* Raleway-ThinItalic.ttf in Resources */,
+				7A2E2F61225AEA5600CA0D08 /* Raleway-BoldItalic.ttf in Resources */,
+				7A2E2F6A225AEA5600CA0D08 /* Raleway-Thin.ttf in Resources */,
 				7AA677D522250BDC00F6B596 /* LaunchScreen.storyboard in Resources */,
+				7A2E2F43225AEA4600CA0D08 /* Overpass-ExtraBoldItalic.ttf in Resources */,
+				7A2E2F62225AEA5600CA0D08 /* Raleway-LightItalic.ttf in Resources */,
+				7A2E2F6B225AEA5600CA0D08 /* Raleway-BlackItalic.ttf in Resources */,
+				7A2E2F4C225AEA4600CA0D08 /* Overpass-LightItalic.ttf in Resources */,
 				9019AC7E22349D6C00431BF8 /* GoogleService-Info.plist in Resources */,
+				7A2E2F69225AEA5600CA0D08 /* Raleway-SemiBold.ttf in Resources */,
 				7AA677D222250BDC00F6B596 /* Assets.xcassets in Resources */,
+				7A2E2F6C225AEA5600CA0D08 /* Raleway-Italic.ttf in Resources */,
+				7A2E2F42225AEA4600CA0D08 /* Overpass-Black.ttf in Resources */,
+				7A2E2F47225AEA4600CA0D08 /* Overpass-ExtraBold.ttf in Resources */,
+				7A2E2F65225AEA5600CA0D08 /* Raleway-ExtraLight.ttf in Resources */,
+				7A2E2F66225AEA5600CA0D08 /* Raleway-Medium.ttf in Resources */,
+				7A2E2F45225AEA4600CA0D08 /* Overpass-ExtraLightItalic.ttf in Resources */,
+				7A2E2F71225AEA5600CA0D08 /* Raleway-Regular.ttf in Resources */,
+				7A2E2F3F225AEA4600CA0D08 /* Overpass-BoldItalic.ttf in Resources */,
+				7A2E2F60225AEA5600CA0D08 /* Raleway-ExtraLightItalic.ttf in Resources */,
+				7A2E2F63225AEA5600CA0D08 /* Raleway-Light.ttf in Resources */,
+				7A2E2F68225AEA5600CA0D08 /* Raleway-ExtraBoldItalic.ttf in Resources */,
+				7A2E2F4D225AEA4600CA0D08 /* Overpass-SemiBold.ttf in Resources */,
+				7A2E2F48225AEA4600CA0D08 /* Overpass-ExtraLight.ttf in Resources */,
+				7A2E2F67225AEA5600CA0D08 /* Raleway-ExtraBold.ttf in Resources */,
+				7A2E2F46225AEA4600CA0D08 /* Overpass-ThinItalic.ttf in Resources */,
 				7AA677D022250BDB00F6B596 /* Main.storyboard in Resources */,
+				7A2E2F41225AEA4600CA0D08 /* Overpass-BlackItalic.ttf in Resources */,
+				7A2E2F49225AEA4600CA0D08 /* Overpass-Bold.ttf in Resources */,
+				7A2E2F4B225AEA4600CA0D08 /* Overpass-Thin.ttf in Resources */,
+				7A2E2F64225AEA5600CA0D08 /* Raleway-Bold.ttf in Resources */,
+				7A2E2F44225AEA4600CA0D08 /* Overpass-SemiBoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

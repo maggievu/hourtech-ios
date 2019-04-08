@@ -35,7 +35,7 @@ class MessageSummaryTableViewCell: UITableViewCell {
         let date = Date(timeIntervalSince1970: chatSummaryInfo.latestTime)
         let dateFormatter = DateFormatter()
         dateFormatter.locale = NSLocale.current
-        dateFormatter.dateFormat = "MMM d, h:mm a"
+        dateFormatter.dateFormat = "MMM dd, yyyy \n h:mm a"
         
         latestDatetimeLabel.text = dateFormatter.string(from: date)
         

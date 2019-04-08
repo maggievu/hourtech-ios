@@ -50,6 +50,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         retrieveProfile()
         print("ViewDidLoad")
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {

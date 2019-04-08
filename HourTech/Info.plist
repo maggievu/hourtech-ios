@@ -50,5 +50,42 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Raleway-Black.ttf</string>
+		<string>Raleway-BlackItalic.ttf</string>
+		<string>Raleway-Bold.ttf</string>
+		<string>Raleway-BoldItalic.ttf</string>
+		<string>Raleway-ExtraBold.ttf</string>
+		<string>Raleway-ExtraBoldItalic.ttf</string>
+		<string>Raleway-ExtraLight.ttf</string>
+		<string>Raleway-ExtraLightItalic.ttf</string>
+		<string>Raleway-Italic.ttf</string>
+		<string>Raleway-Light.ttf</string>
+		<string>Raleway-LightItalic.ttf</string>
+		<string>Raleway-Medium.ttf</string>
+		<string>Raleway-MediumItalic.ttf</string>
+		<string>Raleway-Regular.ttf</string>
+		<string>Raleway-SemiBold.ttf</string>
+		<string>Raleway-SemiBoldItalic.ttf</string>
+		<string>Raleway-Thin.ttf</string>
+		<string>Raleway-ThinItalic.ttf</string>
+		<string>Overpass-Black.ttf</string>
+		<string>Overpass-BlackItalic.ttf</string>
+		<string>Overpass-Bold.ttf</string>
+		<string>Overpass-BoldItalic.ttf</string>
+		<string>Overpass-ExtraBold.ttf</string>
+		<string>Overpass-ExtraBoldItalic.ttf</string>
+		<string>Overpass-ExtraLight.ttf</string>
+		<string>Overpass-ExtraLightItalic.ttf</string>
+		<string>Overpass-Italic.ttf</string>
+		<string>Overpass-Light.ttf</string>
+		<string>Overpass-LightItalic.ttf</string>
+		<string>Overpass-Regular.ttf</string>
+		<string>Overpass-SemiBold.ttf</string>
+		<string>Overpass-SemiBoldItalic.ttf</string>
+		<string>Overpass-Thin.ttf</string>
+		<string>Overpass-ThinItalic.ttf</string>
+	</array>
 </dict>
 </plist>
