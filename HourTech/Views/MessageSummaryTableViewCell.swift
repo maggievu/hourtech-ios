@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import SDWebImage
 
 class MessageSummaryTableViewCell: UITableViewCell {
 
     @IBOutlet weak var fullnameLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var latestDatetimeLabel: UILabel!
+    @IBOutlet weak var profileImageView: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -29,6 +31,7 @@ class MessageSummaryTableViewCell: UITableViewCell {
     }
     
     func configurateCell(_ chatSummaryInfo: ChatSummary) {
+        profileImageView.sd_setImage(with: URL(string: chatSummaryInfo.imageURL), placeholderImage: UIImage(named: "avatar"))
         fullnameLabel.text = chatSummaryInfo.firstname + " " + chatSummaryInfo.lastname
         titleLabel.text = chatSummaryInfo.title
         

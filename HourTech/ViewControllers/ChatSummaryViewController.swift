@@ -72,6 +72,8 @@ class ChatSummaryViewController: UIViewController {
                             
                             newChatSum.title = dataDictionary["title"] as! String
                             
+                            newChatSum.imageURL = dataDictionary["imgURL"] as! String
+                            
                             self.chatSummary.append(newChatSum)
                             
                             self.messageSummaryTableView.reloadData()
@@ -91,6 +93,8 @@ class ChatSummaryViewController: UIViewController {
                             newChatSum.lastname = dataDictionary["lastname"] as! String
                             
                             newChatSum.title = dataDictionary["title"] as! String
+                            
+                            newChatSum.imageURL = dataDictionary["imgURL"] as! String
                             
                             self.chatSummary.append(newChatSum)
                             

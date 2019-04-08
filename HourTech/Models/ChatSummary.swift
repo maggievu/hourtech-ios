@@ -16,4 +16,5 @@ class ChatSummary {
     var fullname: String = ""
     var title: String = ""
     var latestTime: Double = 0
+    var imageURL: String = ""
 }

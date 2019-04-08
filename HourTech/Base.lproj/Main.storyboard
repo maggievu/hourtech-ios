@@ -815,6 +815,7 @@
                                         <connections>
                                             <outlet property="fullnameLabel" destination="tBQ-Gb-Q5D" id="4bK-4e-lci"/>
                                             <outlet property="latestDatetimeLabel" destination="1xM-B5-xel" id="fRX-Re-VNg"/>
+                                            <outlet property="profileImageView" destination="Lvq-jm-Qfn" id="xfm-7d-gDh"/>
                                             <outlet property="titleLabel" destination="bhZ-ga-Hhz" id="ho2-Ka-Dlc"/>
                                         </connections>
                                     </tableViewCell>
@@ -1253,7 +1254,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Oku-pu-WkP"/>
-        <segue reference="HKF-pG-GkE"/>
+        <segue reference="O5C-su-enA"/>
         <segue reference="Z8g-uW-tfx"/>
         <segue reference="CCB-TD-MNq"/>
     </inferredMetricsTieBreakers>
