@@ -37,11 +37,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         view.addBackground()
         
-        UIView.animate(withDuration: 1, delay: 0, options: .curveEaseOut, animations: {
+        UIView.animate(withDuration: 1, delay: 0, options: .curveEaseIn, animations: {
             self.moveUpAndScale(view: self.logoImageView)
         }, completion: nil)
         
-        UIView.animate(withDuration: 0.9, delay: 0.1, options: .curveEaseIn, animations: {
+        UIView.animate(withDuration: 0.7, delay: 0.2, options: .curveEaseIn, animations: {
             self.moveUp(view: self.searchInstructionLabel)
             self.moveUp(view: self.searchTextField)
             self.moveUp(view: self.searchButtonLabel)
@@ -88,11 +88,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
+    // / translation y point is equal to: - (view's Y center - half the height of the bottom block, the block from searchInstructionLabel to buttons signIn signUp)
     func moveUp(view: UIView){
         view.transform = CGAffineTransform(translationX: 0.0, y: -self.view.center.y + 150.0)
     }
+    
     func moveUpAndScale(view: UIView) {
-        view.transform = CGAffineTransform(translationX: 0.0, y: -self.view.center.y + 40.0).concatenating((CGAffineTransform(scaleX: 0.7, y: 0.7)))
+        view.transform = CGAffineTransform(translationX: 0.0, y: -self.view.center.y + 30.0).concatenating((CGAffineTransform(scaleX: 0.7, y: 0.7)))
     }
     
     func retrieveProfile() {
