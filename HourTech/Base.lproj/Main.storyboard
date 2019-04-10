@@ -39,6 +39,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2jD-fz-eN7">
                                                 <rect key="frame" x="119.5" y="245.5" width="133" height="30"/>
                                                 <state key="normal" title="Sign In with Google"/>
+                                                <connections>
+                                                    <action selector="googleSignIn:" destination="JPR-m5-Vgw" eventType="touchUpInside" id="qci-Mu-iL0"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OgA-sz-WRn">
                                                 <rect key="frame" x="138.5" y="140" width="95" height="27"/>
@@ -1253,9 +1256,9 @@
         <image name="stars" width="89" height="16"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Oku-pu-WkP"/>
+        <segue reference="VTh-09-hwn"/>
         <segue reference="O5C-su-enA"/>
-        <segue reference="Z8g-uW-tfx"/>
+        <segue reference="flM-VY-K8v"/>
         <segue reference="CCB-TD-MNq"/>
     </inferredMetricsTieBreakers>
 </document>

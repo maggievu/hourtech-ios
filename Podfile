@@ -14,5 +14,6 @@ target 'HourTech' do
     pod 'Firebase/Storage'
     pod 'SDWebImage'
     pod 'FirebaseUI/Storage'
+    pod 'GoogleSignIn'
 
 end
