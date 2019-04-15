@@ -45,6 +45,7 @@
 		7A2E2F70225AEA5600CA0D08 /* Raleway-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E2F5E225AEA5500CA0D08 /* Raleway-Black.ttf */; };
 		7A2E2F71225AEA5600CA0D08 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7A2E2F5F225AEA5600CA0D08 /* Raleway-Regular.ttf */; };
 		7A3B27AA22260CAC0030879A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A3B27A922260CAC0030879A /* SignUpViewController.swift */; };
+		7A5AE4E52263FAEA005742CD /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A5AE4E42263FAEA005742CD /* ActivityViewController.swift */; };
 		7AA677CB22250BDB00F6B596 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA677CA22250BDB00F6B596 /* AppDelegate.swift */; };
 		7AA677CD22250BDB00F6B596 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA677CC22250BDB00F6B596 /* ViewController.swift */; };
 		7AA677D022250BDB00F6B596 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AA677CE22250BDB00F6B596 /* Main.storyboard */; };
@@ -111,6 +112,7 @@
 		7A2E2F5E225AEA5500CA0D08 /* Raleway-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Black.ttf"; sourceTree = "<group>"; };
 		7A2E2F5F225AEA5600CA0D08 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
 		7A3B27A922260CAC0030879A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		7A5AE4E42263FAEA005742CD /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		7AA677C722250BDB00F6B596 /* HourTech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HourTech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AA677CA22250BDB00F6B596 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AA677CC22250BDB00F6B596 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 				902B1A0A2249B1F800A2C593 /* ChatSummaryViewController.swift */,
 				901CA5D3224CAD8700ADDD3D /* ChatDetailViewController.swift */,
 				90EFB0BF223BD35E00AC214D /* SideMenuViewController.swift */,
+				7A5AE4E42263FAEA005742CD /* ActivityViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -508,6 +511,7 @@
 				7AA677CB22250BDB00F6B596 /* AppDelegate.swift in Sources */,
 				7AF1752B22275EE300478A7F /* TextFieldDelegate.swift in Sources */,
 				901CA5D6224CD4C300ADDD3D /* Message.swift in Sources */,
+				7A5AE4E52263FAEA005742CD /* ActivityViewController.swift in Sources */,
 				901CA5D0224C9AE800ADDD3D /* ChatSummary.swift in Sources */,
 				7AF175212226E47F00478A7F /* SearchResultsViewController.swift in Sources */,
 				7AAE335F222BC2980033C537 /* RoundedCornerUIButton.swift in Sources */,

@@ -18,6 +18,11 @@ class SideMenuViewController: UIViewController {
     @IBAction func logoutButtonTapped(_ sender: Any) {
         do {
             try Auth.auth().signOut()
+            let alertController = UIAlertController(title: "You are logged out", message: "Thank you for using HourTech! We hope to see you soon", preferredStyle: .alert)
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: { action in self.performSegue(withIdentifier: "signin_segue", sender: self) })
+            alertController.addAction(defaultAction)
+            
+            self.present(alertController, animated: true, completion: nil)
         }
         catch let signOutError as NSError {
             print ("Error signing out: %@", signOutError)

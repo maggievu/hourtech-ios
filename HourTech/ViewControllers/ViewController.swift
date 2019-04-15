@@ -41,7 +41,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             self.moveUpAndScale(view: self.logoImageView)
         }, completion: nil)
         
-        UIView.animate(withDuration: 0.7, delay: 0.2, options: .curveEaseIn, animations: {
+        UIView.animate(withDuration: 0.75, delay: 0.2, options: .curveEaseIn, animations: {
             self.moveUp(view: self.searchInstructionLabel)
             self.moveUp(view: self.searchTextField)
             self.moveUp(view: self.searchButtonLabel)
